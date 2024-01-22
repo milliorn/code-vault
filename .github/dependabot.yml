@@ -1,0 +1,272 @@
+# To get started with Dependabot version updates, you'll need to specify which
+# package ecosystems to update and where the package manifests are located.
+# Please see the documentation for all configuration options:
+# https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
+
+version: 2
+updates:
+  # Maintain dependencies for GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+
+  # Maintain dependencies for npm in the nextjs-13-mongo-starter
+  - package-ecosystem: "npm"
+    directory: "/nextjs-13-mongo-starter"
+    schedule:
+      interval: "monthly"
+    groups:
+      nextjs-13-mongo-starter:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+
+  # Maintain dependencies for npm in the loan-calculator project
+  - package-ecosystem: "npm"
+    directory: "/loan-calculator"
+    schedule:
+      interval: "monthly"
+    groups:
+      loan-calculator:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+
+  # Maintain dependencies for npm in the keyword-extractor project
+  - package-ecosystem: "npm"
+    directory: "/keyword-extractor"
+    schedule:
+      interval: "monthly"
+    groups:
+      keyword-extractor:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+
+  # Maintain dependencies for npm in the nodejs-server-minimal project
+  - package-ecosystem: "npm"
+    directory: "/nodejs-server-minimal"
+    schedule:
+      interval: "monthly"
+    groups:
+      nodejs-server-minimal:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+
+  # Maintain dependencies for npm in the nextjs-blog project
+  - package-ecosystem: "npm"
+    directory: "/nextjs-blog"
+    schedule:
+      interval: "monthly"
+    groups:
+      nextjs-blog:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+
+  # Maintain dependencies for npm in the webpack-starter-kit project
+  - package-ecosystem: "npm"
+    directory: "/webpack-starter-kit"
+    schedule:
+      interval: "monthly"
+    groups:
+      webpack-starter-kit:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+
+  # Maintain dependencies for npm in the task-tracker project
+  - package-ecosystem: "npm"
+    directory: "/task-tracker"
+    schedule:
+      interval: "monthly"
+    groups:
+      task-tracker:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+
+  # Maintain dependencies for npm in the binary-calculator project
+  - package-ecosystem: "npm"
+    directory: "/binary-calculator"
+    schedule:
+      interval: "monthly"
+    groups:
+      binary-calculator:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+
+  # Maintain dependencies for npm in the iplocation project
+  - package-ecosystem: "npm"
+    directory: "/iplocation"
+    schedule:
+      interval: "monthly"
+    groups:
+      iplocation:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+
+  # Maintain dependencies for npm in the tea-cozy project
+  - package-ecosystem: "npm"
+    directory: "/tea-cozy"
+    schedule:
+      interval: "monthly"
+    groups:
+      tea-cozy:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+
+  # Maintain dependencies for npm in the pomodoro-clock project
+  - package-ecosystem: "npm"
+    directory: "/pomodoro-clock"
+    schedule:
+      interval: "monthly"
+    groups:
+      pomodoro-clock:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+
+  # Maintain dependencies for npm in the airbnb-experiences project
+  - package-ecosystem: "npm"
+    directory: "/airbnb-experiences"
+    schedule:
+      interval: "monthly"
+    groups:
+      airbnb-experiences:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+
+  # Maintain dependencies for npm in the huddle project
+  - package-ecosystem: "npm"
+    directory: "/huddle"
+    schedule:
+      interval: "monthly"
+    groups:
+      huddle:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+
+  # Maintain dependencies for npm in the hulu project
+  - package-ecosystem: "npm"
+    directory: "/hulu"
+    schedule:
+      interval: "monthly"
+    groups:
+      hulu:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+
+  # Maintain dependencies for npm in the iphone-3d project
+  - package-ecosystem: "npm"
+    directory: "/iphone-3d"
+    schedule:
+      interval: "monthly"
+    groups:
+      iphone-3d:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+
+  # Maintain dependencies for npm in the netlifx project
+  - package-ecosystem: "npm"
+    directory: "/netlifx"
+    schedule:
+      interval: "monthly"
+    groups:
+      netlifx:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+
+  # Maintain dependencies for npm in the spaceX project
+  - package-ecosystem: "npm"
+    directory: "/spaceX"
+    schedule:
+      interval: "monthly"
+    groups:
+      spaceX:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+
+  # Maintain dependencies for npm in the starbucks project
+  - package-ecosystem: "npm"
+    directory: "/starbucks"
+    schedule:
+      interval: "monthly"
+    groups:
+      starbucks:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+
+  # Maintain dependencies for npm in the travel-agency project
+  - package-ecosystem: "npm"
+    directory: "/travel-agency"
+    schedule:
+      interval: "monthly"
+    groups:
+      travel-agency:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+
+  # Maintain dependencies for npm in the travel-journal project
+  - package-ecosystem: "npm"
+    directory: "/travel-journal"
+    schedule:
+      interval: "monthly"
+    groups:
+      travel-journal:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
