@@ -12,6 +12,19 @@ updates:
       interval: "monthly"
 
   # Maintain dependencies for npm in the nextjs-13-mongo-starter
+  - package-ecosystem: "cargo"
+    directory: "/rust-tetris-clone"
+    schedule:
+      interval: "monthly"
+    groups:
+      rust-tetris-clone:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+
+  # Maintain dependencies for npm in the nextjs-13-mongo-starter
   - package-ecosystem: "npm"
     directory: "/nextjs-13-mongo-starter"
     schedule:
