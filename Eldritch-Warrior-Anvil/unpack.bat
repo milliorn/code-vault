@@ -1,0 +1,1 @@
+docker run --rm -it -v %cd%:/nasher nwntools/nasher:0.15.0 unpack --file:Eldritch_Warrior.mod
