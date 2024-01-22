@@ -20,19 +20,19 @@
   "homepage": "https://github.com/milliorn/webpack-starter-kit#readme",
   "devDependencies": {
     "@babel/core": "^7.23.7",
-    "@babel/preset-env": "^7.23.2",
+    "@babel/preset-env": "^7.23.8",
     "babel-loader": "^9.1.2",
-    "css-loader": "^6.7.3",
-    "html-webpack-plugin": "^5.5.1",
-    "sass": "^1.69.6",
+    "css-loader": "^6.9.1",
+    "html-webpack-plugin": "^5.6.0",
+    "sass": "^1.70.0",
     "sass-loader": "^13.2.2",
-    "style-loader": "^3.3.1",
+    "style-loader": "^3.3.4",
     "webpack": "^5.89.0",
     "webpack-bundle-analyzer": "^4.10.1",
     "webpack-cli": "^5.1.0",
     "webpack-dev-server": "^4.15.0"
   },
   "dependencies": {
-    "axios": "^1.6.3"
+    "axios": "^1.6.5"
   }
 }
