@@ -296,3 +296,16 @@ updates:
         update-types:
           - "minor"
           - "patch"
+
+  # Maintain dependencies for npm in the unsplash-image-search project
+  - package-ecosystem: "npm"
+    directory: "/unsplash-image-search"
+    schedule:
+      interval: "monthly"
+    groups:
+      travel-journal:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
