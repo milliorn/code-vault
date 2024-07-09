@@ -322,3 +322,16 @@ updates:
         update-types:
           - "minor"
           - "patch"
+
+  # Maintain dependencies for npm in the markdown-previewer project
+  - package-ecosystem: "npm"
+    directory: "/markdown-previewer"
+    schedule:
+      interval: "monthly"
+    groups:
+      markdown-previewer:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
