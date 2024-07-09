@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@500&family=Poppins&family=Roboto&display=swap");
+
+a {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+body {
+  -webkit-box-align: center;
+  align-items: center;
+  background: linear-gradient(
+    360deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(125, 125, 125, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background-color: #080808;
+  background-repeat: no-repeat;
+  background-size: auto;
+  color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  font-family: Inter, Helvetica, Arial, system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+h1 {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+  margin: 1rem;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+  max-width: 48rem;
+  padding: 0.75rem;
+  width: 95%;
+}
+
+html {
+  min-height: 100vh;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0.625rem;
+  max-width: 42rem;
+  width: 91.6667%;
+}
+
+.icon {
+  height: 2.75rem;
+  margin: 0.25rem 0.5rem;
+  width: 2.75rem;
+}
+
+.image-container img {
+  border-radius: 50%;
+  display: block;
+  filter: none;
+  height: 96px;
+  object-fit: contain;
+  object-position: initial;
+  width: 96px;
+}
+
+.image-container {
+  border-radius: 48px;
+  height: 6rem;
+  overflow: hidden;
+  width: 6rem;
+}
+
+.share-button {
+  background-color: #f0f0f0;
+  border-radius: 1.25rem;
+  height: 2.5rem;
+  margin-right: 1rem;
+  width: 2.5rem;
+}
+
+.tile {
+  background-color: #282828;
+  border-radius: 1rem;
+  color: inherit;
+  display: flex;
+  height: 3.5rem;
+  hyphens: auto;
+  justify-content: space-between;
+  margin: 0.5rem;
+  max-width: 48rem;
+  overflow-wrap: break-word;
+  white-space: normal;
+  width: 90%;
+  word-break: break-word;
+}
+
+.tile-share-button {
+  background-color: #303030;
+  border-radius: 1.25rem;
+  height: 2.5rem;
+  margin: 0.5rem;
+  width: 2.5rem;
+}
+
+.tile:hover {
+  background: #111;
+  transform: scale(1.02);
+  transition: cubic-bezier(0.08, 0.59, 0.29, 0.99) 1000ms;
+}
+
+.share-button svg,
+.tile-share-button svg {
+  margin-left: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.share-button:hover,
+.tile-share-button:hover {
+  background: #555;
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: cubic-bezier(0.08, 0.59, 0.29, 0.99) 1000ms;
+}
