@@ -2,7 +2,7 @@
 # package ecosystems to update and where the package manifests are located.
 # Please see the documentation for all configuration options:
 # https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
-
+lord-of-the-rings-language-translator
 version: 2
 updates:
   # Maintain dependencies for GitHub Actions
@@ -24,7 +24,20 @@ updates:
           - "minor"
           - "patch"
 
-  # Maintain dependencies for npm in the nextjs-13-mongo-starter
+  # Maintain dependencies for npm in the Lord of the Rings
+  - package-ecosystem: "npm"
+    directory: "/lord-of-the-rings-language-translator"
+    schedule:
+      interval: "monthly"
+    groups:
+      lord-of-the-rings-language-translator:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+
+  # Maintain dependencies for npm in the nextjs-13-starter
   - package-ecosystem: "npm"
     directory: "/nextjs-starter"
     schedule:
@@ -37,7 +50,7 @@ updates:
           - "minor"
           - "patch"
 
-  # Maintain dependencies for npm in the nextjs-13-mongo-starter
+  # Maintain dependencies for npm in the drum-machine
   - package-ecosystem: "npm"
     directory: "/drum-machine"
     schedule:
