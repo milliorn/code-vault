@@ -26,6 +26,19 @@ updates:
 
   # Maintain dependencies for npm in the nextjs-13-mongo-starter
   - package-ecosystem: "npm"
+    directory: "/nextjs-starter"
+    schedule:
+      interval: "monthly"
+    groups:
+      nextjs-starter:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+
+  # Maintain dependencies for npm in the nextjs-13-mongo-starter
+  - package-ecosystem: "npm"
     directory: "/drum-machine"
     schedule:
       interval: "monthly"
