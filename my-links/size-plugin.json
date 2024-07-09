@@ -1,0 +1,215 @@
+[
+  {
+    "timestamp": 1704259968049,
+    "files": [
+      {
+        "filename": "bundle.46448.css",
+        "previous": 872,
+        "size": 0,
+        "diff": -872
+      },
+      {
+        "filename": "bundle.*****.esm.js",
+        "previous": 7013,
+        "size": 7773,
+        "diff": 760
+      },
+      {
+        "filename": "polyfills.*****.esm.js",
+        "previous": 2181,
+        "size": 2315,
+        "diff": 134
+      },
+      {
+        "filename": "sw-esm.js",
+        "previous": 11375,
+        "size": 11398,
+        "diff": 23
+      },
+      {
+        "filename": "sw.js",
+        "previous": 11369,
+        "size": 11394,
+        "diff": 25
+      },
+      {
+        "filename": "polyfills.34206.js",
+        "previous": 2281,
+        "size": 0,
+        "diff": -2281
+      },
+      {
+        "filename": "index.html",
+        "previous": 3308,
+        "size": 3290,
+        "diff": -18
+      },
+      {
+        "filename": "200.html",
+        "previous": 811,
+        "size": 810,
+        "diff": -1
+      },
+      {
+        "filename": "bundle.c207c.js",
+        "previous": 6788,
+        "size": 0,
+        "diff": -6788
+      },
+      {
+        "filename": "bundle.f8c3b.css",
+        "previous": 0,
+        "size": 897,
+        "diff": 897
+      },
+      {
+        "filename": "bundle.05722.js",
+        "previous": 0,
+        "size": 7509,
+        "diff": 7509
+      },
+      {
+        "filename": "polyfills.59583.js",
+        "previous": 0,
+        "size": 2417,
+        "diff": 2417
+      }
+    ]
+  },
+  {
+    "timestamp": 1669711187135,
+    "files": [
+      {
+        "filename": "bundle.46448.css",
+        "previous": 872,
+        "size": 872,
+        "diff": 0
+      },
+      {
+        "filename": "bundle.*****.esm.js",
+        "previous": 7012,
+        "size": 7013,
+        "diff": 1
+      },
+      {
+        "filename": "polyfills.*****.esm.js",
+        "previous": 2181,
+        "size": 2181,
+        "diff": 0
+      },
+      {
+        "filename": "sw-esm.js",
+        "previous": 11376,
+        "size": 11375,
+        "diff": -1
+      },
+      {
+        "filename": "sw.js",
+        "previous": 11372,
+        "size": 11369,
+        "diff": -3
+      },
+      {
+        "filename": "bundle.5aeb6.js",
+        "previous": 6786,
+        "size": 0,
+        "diff": -6786
+      },
+      {
+        "filename": "polyfills.34206.js",
+        "previous": 2281,
+        "size": 2281,
+        "diff": 0
+      },
+      {
+        "filename": "index.html",
+        "previous": 3307,
+        "size": 3308,
+        "diff": 1
+      },
+      {
+        "filename": "200.html",
+        "previous": 810,
+        "size": 811,
+        "diff": 1
+      },
+      {
+        "filename": "bundle.c207c.js",
+        "previous": 0,
+        "size": 6788,
+        "diff": 6788
+      }
+    ]
+  },
+  {
+    "timestamp": 1669703453063,
+    "files": [
+      {
+        "filename": "ssr-build/ssr-bundle.46448.css",
+        "previous": 1015,
+        "size": 0,
+        "diff": -1015
+      },
+      {
+        "filename": "ssr-build/ssr-bundle.js",
+        "previous": 2845,
+        "size": 0,
+        "diff": -2845
+      },
+      {
+        "filename": "bundle.46448.css",
+        "previous": 0,
+        "size": 872,
+        "diff": 872
+      },
+      {
+        "filename": "bundle.*****.esm.js",
+        "previous": 0,
+        "size": 7012,
+        "diff": 7012
+      },
+      {
+        "filename": "polyfills.*****.esm.js",
+        "previous": 0,
+        "size": 2181,
+        "diff": 2181
+      },
+      {
+        "filename": "sw-esm.js",
+        "previous": 0,
+        "size": 11376,
+        "diff": 11376
+      },
+      {
+        "filename": "sw.js",
+        "previous": 0,
+        "size": 11372,
+        "diff": 11372
+      },
+      {
+        "filename": "bundle.5aeb6.js",
+        "previous": 0,
+        "size": 6786,
+        "diff": 6786
+      },
+      {
+        "filename": "polyfills.34206.js",
+        "previous": 0,
+        "size": 2281,
+        "diff": 2281
+      },
+      {
+        "filename": "index.html",
+        "previous": 0,
+        "size": 3307,
+        "diff": 3307
+      },
+      {
+        "filename": "200.html",
+        "previous": 0,
+        "size": 810,
+        "diff": 810
+      }
+    ]
+  }
+]
