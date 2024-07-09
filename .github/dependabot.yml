@@ -24,6 +24,19 @@ updates:
           - "minor"
           - "patch"
 
+  # Maintain dependencies for npm in the create-react-app-minimal
+  - package-ecosystem: "npm"
+    directory: "/create-react-app-minimal"
+    schedule:
+      interval: "monthly"
+    groups:
+      create-react-app-minimal:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+
   # Maintain dependencies for npm in the Lord of the Rings
   - package-ecosystem: "npm"
     directory: "/lord-of-the-rings-language-translator"
