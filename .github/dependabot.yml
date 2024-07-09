@@ -50,6 +50,19 @@ updates:
           - "minor"
           - "patch"
 
+  - package-ecosystem: "npm"
+    directory: "/my-links"
+    schedule:
+      interval: "monthly"
+    groups:
+      my-links:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+
+
   # Maintain dependencies for npm in the loan-calculator project
   - package-ecosystem: "npm"
     directory: "/loan-calculator"
