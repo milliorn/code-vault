@@ -1,0 +1,92 @@
+/*
+	Include an @each loop that traverses the best selling list for each “food” and “tons produced”:
+	The index functions takes two arguments: index($list, $element).
+	Your element in this case will be ($foods $tons-produced), and your list will be $top-foods.
+	Assign the index to a variable $i:
+	Now we can actually begin styling each of the bars, or <rect> elements in our document.
+	Display the name of the food on each bar by using the :before pseudo element and
+	assigning the content property a value of $food inside of main.scss.
+	This will make the content of the element be a string with the value of the food.
+	Let’s use the :after pseudo element to do that.
+	Assign its content property a value of $tons-produced.
+*/
+
+$top-foods: ("Sugar Cane" 1898),
+("Corn" 1017),
+("Rice" 738),
+("Wheat" 711),
+("Cow Milk" 635),
+("Potatoes" 374),
+("Vegetables" 279),
+("Soy Beans" 278),
+("Cassava" 263),
+("Sugar Beets" 247);
+
+@each $food, $tons-produced in $top-foods {
+	$i: index($top-foods, ($food $tons-produced));
+
+	rect:nth-child(#{$i + 1}) {
+		height: #{$tons-produced / 3}px;
+
+		@if ($i % 3 == 0) {
+		background-color: fade-out($sea-green, $i*5/100);
+			}
+
+			@else if($i % 3 == 1) {
+		background-color: fade-out($pale-green, $i*5/100);
+			}
+
+			@else {
+		background-color: fade-out($diamond-blue, $i*5/100);
+			}
+
+			&:before {
+		content: $food;
+			}
+
+			&:after {
+		content: $tons-produced + "m";
+			}
+	}
+}
+
+$diamond-blue: rgba(0, 159, 255, .6);
+$sea-green: rgba(10, 165, 153, .6);
+$pale-green: rgba(167, 240, 213, .6);
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	padding-bottom: 20px;
+	color: #434444;
+}
+
+span {
+	display: block;
+}
+
+rect {
+	width: 24px;
+	float: left;
+	padding-left: 25px;
+	padding-top: 7px;
+	white-space: nowrap;
+	word-break: break-all;
+	position: relative;
+	bottom: 0px;
+	font-size: 12px;
+	color: #707070;
+	background-color: #707070;
+	font-family: 'Montserrat', sans-serif;
+	&:before {
+		display: inline-block;
+		-webkit-transform: rotate(90deg);
+		transform-origin: left top 0;
+		float: left;
+	}
+	&:after {
+		position: absolute;
+		top: -15px;
+		left: 0px;
+	}
+}

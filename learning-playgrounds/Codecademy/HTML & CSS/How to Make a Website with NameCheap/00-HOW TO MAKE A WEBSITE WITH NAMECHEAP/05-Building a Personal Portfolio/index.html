@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Personal Portfolio</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+
+<!--
+    Let’s begin crafting your navigation header, which will offer a user other pages to visit.
+    Within the body, create a header element with Bootstrap’s container class.
+
+    Within this opening container, create a div with the Bootstrap class row.
+
+    Within this row,
+    create an h1 with Bootstrap’s class col-sm-6 and put your name between the opening and closing h1 tags.
+
+    Underneath the h1, add a nav element with Bootstrap’s class col-sm-6 text-right.
+
+    This nav element will have three a elements with href properties. Create three links:
+    about.html linked to the text “About Me”
+    education.html linked to the text “Education”
+    experience.html linked to the text “Experience”
+-->
+
+<body>
+    <header class="container">
+        <div class="row">
+            <h1 class="col-sm-6">Scott</h1>
+            <nav class="col-sm-6 text-right">
+                <a href="about.html">About Me</a>
+                <a href="education.html">Education</a>
+                <a href="experience.html">Experience</a>
+            </nav>
+        </div>
+    </header>
+
+    <!--
+        Below our header element, create a section element with the jumbotron class.
+        We’ve set a default background image in the CSS file to that of a skyline.
+        You’re welcome (and encouraged) to choose your own image for free at unsplash.com.
+
+        Within this jumbotron, make a container with a single row,
+        similar to steps 1 & 2 when making the header.
+        This time, the container will be a div, not a header.
+
+        Inside this row, create an h2 that states your position as a programmer.
+
+        Underneath the h2, add an h3 that lists the programming languages you know.
+    -->
+    <section class="jumbotron">
+        <div class="container"></div>
+        <div class="row">
+            <h2>Junior Developer</h2>
+            <h3>C#, Javascript, HTML, CSS</h3>
+        </div>
+    </section>
+
+    <!--
+        Below the jumbotron element,
+        create a footer element with the container class with a single row nested inside of it.
+        Within this row, add a paragraph with Bootstrap’s col-sm-4 class that lists &copy; 2019 Your-Name.
+
+        Under this paragraph, add four divs, each with the class col-sm-2.
+    -->
+    <footer class="container">
+        <div class="row"></div>
+        <p class="col-sm-4">&copy; 2021 Scott Milliorn</p>
+        <div class="col-sm-2"><a href="https://medium.com" target="_blank">Medium</a></div>
+        <div class="col-sm-2"><a href="https://github.com" target="_blank">Github</a></div>
+        <div class="col-sm-2"><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></div>
+        <div class="col-sm-2"><a href="https://tunein.com/podcasts/" target="_blank">Podcast</a></div>
+    </footer>
+</body>
+
+</html>

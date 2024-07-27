@@ -1,0 +1,161 @@
+/*
+THE BOX MODEL
+
+Visibility
+
+Elements can be hidden from view with the visibility property.
+
+The visibility property can be set to one of the following values:
+
+hidden — hides an element.
+visible — displays an element.
+
+<ul>
+  <li>Explore</li>
+  <li>Connect</li>
+  <li class="future">Donate</li>
+<ul>
+
+.future {
+  visibility: hidden;
+}
+
+In the example above, the list item with a class of future will be hidden from view in the browser.
+
+Keep in mind, however, that users can still view the contents of the list item (e.g., Donate) by viewing the source code in their browser. Furthermore, the web page will only hide the contents of the element. It will still leave an empty space where the element is intended to display.
+
+Note: What’s the difference between display: none and visibility: hidden? An element with display: none will be completely removed from the web page. An element with visibility: hidden, however, will not be visible on the web page, but the space reserved for it will.
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #FFF;
+  font-family: 'Raleway', sans-serif;
+}
+
+.navigation {
+  text-align: center;
+}
+
+.donate {
+  visibility: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  font-weight: 100;
+  letter-spacing: 2px;
+  padding: 20px 0px;
+  text-transform: uppercase;
+}
+
+.logo {
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  padding: 0px 50px;
+}
+
+.banner {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_tahoe.jpeg");
+  background-size: cover;
+  background-position: bottom center;
+  height: 700px;
+  width: 100%;
+}
+
+#banner-content {
+  border: 1px solid #FFF;
+  position: relative;
+  top: 20%;
+  width: 60%;
+}
+
+h1 {
+  color: #FFF;
+  font-size: 42px;
+  font-weight: 600;
+  text-align: center;
+}
+
+h2 {
+  border: 1px solid #D7263D;
+  color: #D7263D;
+  font-size: 20px;
+  line-height: 48px;
+  padding: 40px 12%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: #D7263D;
+  font-size: 26px;
+  font-weight: 700;
+  padding: 20px 10%;
+  text-transform: uppercase;
+}
+
+p {
+  color: #333;
+  font-size: 16px;
+  line-height: 48px;
+  margin-top: 60px;
+}
+
+.pull-quote {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.content {
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+  width: 70%;
+}
+
+.byline {
+  border-bottom: 1px solid #CCC;
+  border-top: 1px solid #CCC;
+  color: #333;
+  font-size: 14px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.share {
+  border: 1px solid #DDD;
+  padding: 40px 0px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.share a {
+  background: #D7263D;
+  border: 1px solid #D7263D;
+  border-radius: 3px;
+  color: #FFF;
+  display: inline-block;
+  margin: 10px 10px;
+  padding: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.share a:hover {
+  background: #FFF;
+  border: 1px solid #D7263D;
+  color: #D7263D;
+  animation: ease;
+}

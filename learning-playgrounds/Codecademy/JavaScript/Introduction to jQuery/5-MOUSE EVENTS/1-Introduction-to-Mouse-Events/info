@@ -1,0 +1,29 @@
+MOUSE EVENTS
+
+Introduction to Mouse Events
+
+The jQuery library provides a collection of methods that serve one of two purposes.
+
+To listen for an event — an event (e.g. clicking a button) is something the user does to trigger an action.
+To add a visual effect — a visual effect (e.g. a drop-down menu appearing when a user clicks a button) is something that changes the appearance of the web page. Events are often responsible for triggering a visual effect.
+In this lesson, you will learn how to link a user event to a visual effect using event handlers.
+
+There are two parts to an event handler: an event listener and a callback function.
+
+An event listener is a method that listens for a specified event to occur, like a click event.
+A callback function is a function that executes when something triggers the event listener.
+Both the event listener and callback function make up an event handler.
+
+In code, this looks like:
+
+
+$('.example-class').on('click', () => {
+    // Execute code here when .example-class is clicked
+});
+
+
+Let’s consider the example above step-by-step:
+
+$('.example-class') selects all HTML elements with a class of example-class.
+The on('click') method is the event listener. It checks if the user has clicked an .example-class HTML element.
+The second argument to .on() is a callback function. When a 'click' occurs on an example-class element, this function executes.

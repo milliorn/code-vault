@@ -1,0 +1,34 @@
+/*
+    Next, adjust the CSS in breadcrumb.css so the breadcrumb list elements display inline.
+    Add a character of your choosing with CSS to separate the breadcrumbs. This is typically a > or /.
+    Update the CSS so that there is no longer a breadcrumb denoting symbol between “Blueberries” and “Organic”.
+    Style the attribute breadcrumb to make it obvious that it is an attribute.
+    Try changing the color or setting ::after content to make a “close” notation.
+*/
+.breadcrumb > li {
+    display: inline-block;
+}
+
+.breadcrumb li.location + li::before {
+    content: ">";
+}
+
+.breadcrumb li a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.breadcrumb li.attribute a {
+    color: gray;
+}
+
+.breadcrumb li.attribute::after {
+    content: "x";
+    color: blue;
+    font-size: 10px;
+    vertical-align: super;
+}
+
+ul {
+    text-align: center;
+}

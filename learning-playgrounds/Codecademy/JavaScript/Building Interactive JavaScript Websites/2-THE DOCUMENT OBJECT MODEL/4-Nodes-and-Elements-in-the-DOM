@@ -1,0 +1,9 @@
+THE DOCUMENT OBJECT MODEL
+
+Nodes and Elements in the DOM
+
+As mentioned, a node is the equivalent of each family member in a family tree. A node is an intersecting point in a tree that also contains data.
+
+There are nine different types of node objects in the DOM tree. In our diagram, the node objects with the sharp-edge rectangles are of the type Element, while the rounded edge rectangles are of type Text, because they represent the text inside the HTML paragraph elements.
+
+When trying to modify a web page, the script will mostly interact with the DOM nodes of type element. Elements are the building units of HTML web pages, they contain everything between an opening tag and a closing tag. If the tag is a self-closing tag, then that is the element itself.

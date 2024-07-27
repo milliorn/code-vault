@@ -1,0 +1,11 @@
+/*
+    Fix the mixin misuse.
+    Notice that the mixin slide-left does not take any parameters.
+    Since it’s never directly used in the html,
+    make this class a placeholder and place it inside the placeholder partial, helper/_placeholders.scss.
+*/
+
+%slide-left{
+    animation: slide-left 5s;
+    -webkit-animation: slide-left 5s;
+}

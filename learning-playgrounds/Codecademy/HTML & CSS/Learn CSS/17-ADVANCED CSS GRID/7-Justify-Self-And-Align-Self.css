@@ -1,0 +1,120 @@
+/*
+ADVANCED CSS GRID
+
+Justify Self and Align Self
+
+The justify-items and align-items properties specify how all grid items contained within a single container will position themselves along the row and column axes, respectively.
+
+justify-self specifies how an individual element should position itself with respect to the row axis. This property will override justify-items for any item on which it is declared.
+
+align-self specifies how an individual element should position itself with respect to the column axis. This property will override align-items for any item on which it is declared.
+
+They both accept these four properties:
+
+start — positions grid items on the left side/top of the grid area
+
+end — positions grid items on the right side/bottom of the grid area
+
+center — positions grid items on the center of the grid area
+
+stretch — positions grid items to fill the grid area (default)
+
+align-self and justify-self accept the same values as align-items and justify-items. You can read about these values on the Mozilla Developer Network. The definitions for these values can also be found in the documentation. It is important to note that the page with the definitions includes some values that are not accepted in CSS Grid layout.
+
+These properties are declared on grid items.
+*/
+
+header, footer {
+  background-color: #ffa500;
+  text-align: center;
+  min-width: 500px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 250px 250px;
+  grid-template-rows: repeat(3, 450px);
+  grid-gap: 20px;
+  margin-top: 44px;
+  grid-auto-rows: 500px;
+  justify-items: center;
+  justify-content: center;
+  align-items: stretch;
+  height: 1600px;
+  align-content: center;
+}
+
+h2 {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: #ffa500;
+  padding: 10px 0px 10px 10px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.recipe {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+  width: 200px;
+}
+
+.a {
+  align-self;
+}
+
+.c {
+  justify-self: start;
+}
+
+.time {
+  padding-left: 10px;
+  padding-top: 10px;
+  width: 20px;
+  height: auto;
+}
+
+.mins {
+  display: inline-block;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: #4a4a4a;
+  position: relative;
+  bottom: 5px;
+}
+
+.description {
+  font-family: Work Sans;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.29;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: #4a4a4a;
+  padding: 10px 0px 10px 10px;
+  border-top: 1px solid #4a4a4a;
+}
+
+.logo {
+  width: 115px;
+  height: 21.1px;
+  object-fit: contain;
+  padding: 20px;
+}
+
+.container {
+  min-width: 500px;
+  margin: auto;
+}
+
+footer {
+  margin-top: 44px;
+}

@@ -1,0 +1,47 @@
+body {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+	text-transform: capitalize;
+}
+
+h1 {
+	padding: 16px;
+	padding-left: 3em;
+	letter-spacing: 0.1em;
+	font-weight: bolder;
+}
+
+.colors {
+	border: solid black;
+	border-width: thin thin thin thin 1em;
+	padding: 1em;
+}
+
+.red {
+	color: black;
+	margin: 11px;
+	background-color: #ff0000;
+}
+
+.blue {
+	color: black;
+	margin: 11px;
+	background-color: #192eff;
+}
+
+.yellow {
+	color: black;
+	margin: 11px;
+	background-color: #ffc800;
+}
+
+.green {
+	color: black;
+	margin: 11px;
+	background-color: #19ff5a;
+}
+.red,
+.blue,
+.yellow,
+.green {
+	padding: 16px;
+}

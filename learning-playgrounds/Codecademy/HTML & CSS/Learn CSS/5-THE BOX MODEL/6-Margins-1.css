@@ -1,0 +1,145 @@
+/*
+THE BOX MODEL
+
+Margins I
+
+So far you’ve learned about the following components of the box model: content, borders, and padding. The fourth and final component of the box model is margin.
+
+Margin refers to the space directly outside of the box. The margin property is used to specify the size of this space.
+
+p {
+  border: 1px solid aquamarine;
+  margin: 20px;
+}
+
+The code in the example above will place 20 pixels of space on the outside of the paragraph’s box on all four sides. This means that other HTML elements on the page cannot come within 20 pixels of the paragraph’s border.
+
+If you want to be even more specific about the amount of margin on each side of a box, you can use the following properties:
+
+margin-top
+margin-right
+margin-bottom
+margin-left
+
+Each property affects the margin on only one side of the box, providing more flexibility in customization.
+
+p {
+  border: 3px solid DarkSlateGrey;
+  margin-right: 15px;
+}
+
+In the example above, only the right side of the paragraph’s box will have a margin of 15 pixels. It’s common to see margin values used for a specific side of an element.
+*/
+
+body {
+  background-color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navigation li {
+  font-weight: 100;
+  letter-spacing: 2px;
+  padding: 20px;
+}
+
+.navigation  li.logo {
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+#banner {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_tahoe.jpeg");
+  background-size: cover;
+  background-position: bottom center;
+  height: 700px;
+  width: 100%;
+}
+
+#banner .content h1 {
+  border: 3px solid white;
+  position: relative;
+  top: 50px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+#main {
+  padding: 40px;
+  text-align: center;
+  width: 400px;
+}
+
+h1 {
+  color: white;
+  font-size: 42px;
+  font-weight: 600;
+  text-align: center;
+}
+
+h2 {
+  border: 1px dotted red;
+  color: red;
+  font-size: 14px;
+  line-height: 48px;
+  padding: 20px 30px;
+  text-align: center;
+}
+
+h3 {
+  color: red;
+  font-size: 26px;
+  font-weight: 700;
+  padding: 20px 10px;
+}
+
+p {
+  color: grey;
+  font-size: 16px;
+  line-height: 48px;
+  padding: 10px 20px;
+  margin-top: 60px;
+}
+
+.pull-quote {
+}
+
+.byline {
+  border-bottom: 1px solid LightGrey;
+  border-top: 1px solid LightGrey;
+  color: DarkGrey;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.share {
+  border: 1px solid LightGrey;
+  padding: 40px 0px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.share a {
+  background: red;
+  border: 1px solid red;
+  border-radius: 3px;
+  color: white;
+  display: inline-block;
+  padding: 14px;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.share a:hover {
+  background: white;
+  border: 1px solid red;
+  color: red;
+}

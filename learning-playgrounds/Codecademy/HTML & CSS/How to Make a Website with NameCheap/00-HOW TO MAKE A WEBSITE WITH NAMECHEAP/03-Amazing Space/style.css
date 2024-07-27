@@ -1,0 +1,120 @@
+html, body {
+    min-height: 100%;
+    font-weight: 300;
+  }
+
+  body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 20px 0 0 0;
+  }
+
+  .page-title {
+    text-align: center;
+    font-weight: inherit;
+  }
+
+  .main {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  /*
+    Increase the padding for the .company-description selector to 30px or until it looks right to you.
+  */
+  .company-description {
+    font-size: 0.8rem;
+    border: 30px solid #ffffff;
+    padding: 0px;
+  }
+
+  /*
+    Increase the margin-top property until there is sufficient room between the paragraph element and
+    the “Learn More” link in the web browser.
+  */
+  .learn-more {
+    color: #0071BC;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  /*
+    Add a display property of flex.
+    To make the space images wrap, below display: flex; add a flex-wrap property of wrap.
+    Finally, to center the rows on the webpage, add the justify-content property,
+    and give it a value of center.
+  */
+  .space-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0;
+  }
+
+  /*
+    Margin property for the .space-item selector is currently 40px.
+    Decrease it to 20px, or until it seems correct to you.
+  */
+  .space-item {
+    flex: 1;
+    flex-basis: 25%;
+    margin: 20px;
+  }
+
+  /*
+    Add a border property of 2px solid #ffffff.
+  */
+  .space-item .thumbnail {
+    width: 100%;
+    height: auto;
+    border: 2px #ffffff;
+  }
+
+  /* FOOTER NAVIGATION */
+
+  nav {
+    margin-top: 30px;
+    font-size: 0.70em;
+  }
+
+  nav ul {
+    display: inline;
+  }
+
+  /*
+    Give the nav li selector a display property of inline so that the list items share the same line.
+  */
+  nav li {
+
+    margin: 0 20px 0 0;
+    display: inline;
+  }
+
+  nav a {
+    line-height: 60px;
+    border: 0.75px solid #000000;
+    padding: 7px;
+    border-radius: 10px;
+    color: #204156;
+    text-decoration: none;
+  }
+
+  /*
+    Add a float property of right so that the “Contact Us” button floats to the right of the navbar items.
+  */
+  .contact-btn {
+    cursor: pointer;
+    margin: -23px 30px 0 0;
+    float: right;
+  }
+
+  /*
+    Add a position property of relative. Below it, add a top property of 3px.
+  */
+  .contact-btn a:active {
+    position: relative;
+    top: 3px;
+  }

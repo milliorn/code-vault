@@ -1,0 +1,49 @@
+/*
+	Let’s organize logic first.
+	The @import statements should always be at the top of your main.scss stylesheet.
+	Move the font imports to the top of the file.
+	Import the animations partial at the top main.scss.
+	Import the placeholders partial at the top of main.scss.
+	Replace all instances that included the mixin by instead extending the new placeholder.
+*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import "helper/_animations.scss";
+@import "helper/placeholders";
+
+body {
+	padding-top: 5%;
+	background-color: #F1F2F3;
+	}
+
+	@extend %slide-left;
+
+	h3 {
+		color: $blue;
+		font-family: $slogan-font;
+		font-weight: 600;
+		font-size: 18px;
+		text-transform: uppercase;
+		letter-spacing: $slogan-spacing;
+		line-height: 1.4;
+		position: relative;
+		padding-top: 2%;
+		left: -6.3%;
+	}
+
+	circle {
+		opacity: 1;
+	}
+
+	.element {
+		position: absolute;
+		top: 15%;
+		left: 46%;
+		animation-name: appear;
+		animation-duration: 4s;
+	}
+
+	#sass-logo {
+		width: 100px;
+		fill: white;
+	}
+

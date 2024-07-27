@@ -1,0 +1,41 @@
+/*
+    Select the .header element, and make its background color CornflowerBlue by using the background-color property.
+    In your .header rule set, align the text in the center using the text-align property.
+*/
+.header {
+    background-color: cornflowerblue;
+    text-align: center;
+}
+
+/*
+    In style.css, select the .about-me element, and set its font-size property to 20px.
+    Use the opacity property to make it 50% transparent.
+*/
+.about-me {
+    font-size: 20px;
+    opacity: 0.5;
+}
+
+/*
+    Select the .title elements, and add a font-weight property to make their text bold.
+*/
+.title {
+    font-weight: bold;
+}
+
+/*
+    Change the main title color so that it matches the background color more nicely.
+    Set the color for h1 elements to Azure.
+*/
+h1 {
+    background-color: azure;
+}
+
+/*
+    Select the body element and make the font-family of the page Georgia.
+    Within the body selector, set the background-image property to this URL:
+*/
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url("https://content.codecademy.com/courses/learn-css-selectors-visual-rules/hypnotize_bg.png");
+}

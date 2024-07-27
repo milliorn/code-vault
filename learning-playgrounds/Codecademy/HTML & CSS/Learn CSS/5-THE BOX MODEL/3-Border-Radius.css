@@ -1,0 +1,136 @@
+/*
+THE BOX MODEL
+
+Border Radius
+
+Ever since we revealed the borders of boxes, you may have noticed that the borders highlight the true shape of an element’s box: square. Thanks to CSS, a border doesn’t have to be square.
+
+You can modify the corners of an element’s border box with the border-radius property.
+
+div.container {
+  border: 3px solid rgb(22, 77, 100);
+  border-radius: 5px;
+}
+
+The code in the example above will set all four corners of the border to a radius of 5 pixels (i.e. the same curvature that a circle with radius 5 pixels would have).
+
+You can create a border that is a perfect circle by setting the radius equal to the height of the box, or to 100%.
+
+div.container {
+  height: 60px;
+  width: 60px;
+  border: 3px solid rgb(22, 77, 100);
+  border-radius: 100%;
+}
+
+The code in the example above creates a <div> that is a perfect circle.
+*/
+
+body {
+  background-color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navigation li {
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+.navigation  li.logo {
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+#banner {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_tahoe.jpeg");
+  background-size: cover;
+  background-position: bottom center;
+  height: 700px;
+  width: 100%;
+}
+
+#banner .content h1 {
+  border: solid 3px white;
+  position: relative;
+  top: 50px;
+  width: 400px;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+#main {
+  padding: 40px;
+  text-align: center;
+  width: 400px;
+}
+
+h1 {
+  color: white;
+  font-size: 42px;
+  font-weight: 600;
+  text-align: center;
+}
+
+h2 {
+  border: dotted red;
+  color: red;
+  font-size: 14px;
+  line-height: 48px;
+  text-align: center;
+  border: 1px dotted red;
+}
+
+h3 {
+  color: red;
+  font-size: 26px;
+  font-weight: 700;
+  padding: 20px 10px;
+}
+
+p {
+  color: grey;
+  font-size: 16px;
+  line-height: 48px;
+}
+
+.pull-quote {
+}
+
+.byline {
+  border-bottom: 1px solid LightGrey;
+  border-top: 1px solid LightGrey;
+  color: DarkGrey;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.share {
+  border: 1px solid LightGrey;
+  padding: 40px 0px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.share a {
+  background: red;
+  border: 1px solid red;
+  border-radius: 3px;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.share a:hover {
+  background: white;
+  border: 1px solid red;
+  color: red;
+}

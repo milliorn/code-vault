@@ -1,0 +1,40 @@
+/*
+CSS GRID ESSENTIALS
+
+Grid Row
+
+We can use the property grid-row as shorthand for grid-row-start and grid-row-end. The following two code blocks will produce the same output:
+
+.item {
+  grid-row-start: 4;
+  grid-row-end: 6;
+}
+
+.item {
+  grid-row: 4 / 6;
+}
+
+This code should look similar to the way grid-template is shorthand for grid-template-rowsand grid-template-columns. In this case, the starting row goes before the “/“ and the ending row goes after it. Again, the ending row is exclusive; this grid item will occupy rows four and five.
+
+When an item spans multiple rows or columns using these properties, it will also include the grid-gap if any exists. For example, if an item spans two rows of height 100 pixels and there is a ten-pixel grid-gap, then the item will have a total height of 210 pixels.
+*/
+
+.grid {
+  display: grid;
+  border: 2px blue solid;
+  height: 500px;
+  width:500px;
+  grid-template: repeat(4, 1fr 2fr) / repeat(4, 3fr 2fr);
+  grid-gap: 5px;
+}
+
+.a {
+  grid-row: 5 / 7;
+}
+
+.box {
+  background-color: beige;
+  color: black;
+  border-radius: 5px;
+  border: 2px dodgerblue solid;
+}

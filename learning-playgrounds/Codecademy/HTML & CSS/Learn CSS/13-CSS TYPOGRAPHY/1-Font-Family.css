@@ -1,0 +1,190 @@
+/*
+CSS TYPOGRAPHY
+
+Font Family
+
+If you’ve ever used a formatted word processor, chances are that you probably also used a feature that allowed you change the “type of font” you were typing in. The phrase “type of font” refers to the technical term typeface, or font family.
+
+To change the typeface of text on your web page, you can use the font-family property.
+
+h1 {
+  font-family: Garamond;
+}
+
+In the example above, the font family for all main heading elements has been set to Garamond.
+
+When setting typefaces on a web page, keep the following points in mind:
+
+The font specified in a stylesheet must be installed on a user’s computer in order for that font to display when a user visit the web page. We’ll learn how to work around this issue in a later exercise.
+
+You’ve probably noticed that we haven’t been specifying a typeface in previous exercises of this course. How exactly does the browser know what typeface to use when displaying the web page? The default typeface for all most browsers is Times New Roman. You may be familiar with this typeface if you have ever used a formatted word processor.
+
+It’s a good practice to limit the number of typefaces used on a web page to 2 or 3.
+
+When the name of a typeface consists of more than one word, it must be enclosed in double quotes (otherwise it will not be recognized), like so:
+
+h1 {
+  font-family: "Courier New";
+}
+
+*/
+
+/* Universal Styles */
+
+html {
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-color: #F2F2F2;
+}
+
+h1 {
+  color: white;
+  font-size: 28px;
+  font-family: Georgia;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 2.5;
+  font-family: Georgia;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 16px 0;
+  font-family: Helvetica;
+}
+
+strong {
+  font-weight: bold;
+}
+
+#serif, /* Offset linked sections to account for header. */
+#sans,
+#mono {
+  padding-top: 77px;
+  margin-top: -77px;
+}
+
+/* Header */
+
+.header {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.25;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.header li {
+  display: inline-block;
+}
+
+.header a {
+  display: block;
+  color: #4A4A4A;
+  padding: 30px 20px;
+}
+
+a.home {
+  color: #4D00FF;
+}
+
+
+/* Banner Section */
+
+.banner {
+  background-color: #4D00FF;
+  padding: 100px 0;
+  margin-top: 77px;
+  text-align: center;
+}
+
+.banner p {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: 10px;
+  color: #ffffff;
+}
+
+/* Editorial Sections */
+
+.editorial {
+  padding: 20px;
+  margin: 20px 0;
+  text-align: center;
+  color: #4C4C4C;
+}
+
+/* Font Card Sections */
+
+.font-card {
+  background-color: #ffffff;
+  margin: 50px 0;
+  padding: 20px 50px;
+}
+
+.font-card .creator {
+  font-size: 20px;
+  line-height: 1.25;
+}
+
+.sample {
+  display: inline-block;
+  padding: 0 20px;
+  margin: 20px;
+}
+
+.sample h2 {
+  line-height: 1.5;
+}
+
+.sample .text {
+  color: #4D00FF;
+  font-size: 100px;
+}
+
+/* Add styles for the Garamond font here */
+
+/* Add styles for the Helvetica font here */
+
+/* Add styles for the Space Mono font here */
+
+.bold {
+  font-weight: 900;
+}
+
+.regular {
+  font-weight: normal;
+}
+
+.italic {
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 535px) {
+  .header {
+    font-size: 14px;
+  }
+
+  .header a {
+    padding: 30px 20px;
+  }
+
+  a.home {
+    display: none;
+  }
+}
+

@@ -1,0 +1,140 @@
+/*
+ADVANCED CSS GRID
+
+Align Items
+
+In the previous two exercises, we learned how to position grid items and grid columns from left to right across the page. Below, we’ll learn how to position grid items from top to bottom!
+
+align-items is a property that positions grid items along the block, or column axis. This means that it positions items from top to bottom.
+
+align-items accepts these values:
+
+start — aligns grid items to the top side of the grid area
+
+end — aligns grid items to the bottom side of the grid area
+
+center — aligns grid items to the center of the grid area
+
+stretch — stretches all items to fill the grid area
+
+There are several other values that align-items accepts, which you can read about on the Mozilla Developer Network. The definitions for these values can also be found in the documentation. It is important to note that the page with the definitions includes some values that are not accepted in CSS Grid layout.
+
+<main>
+  <div class="card">Card 1</div>
+  <div class="card">Card 2</div>
+  <div class="card">Card 3</div>
+</main>
+
+main {
+  display: grid;
+  grid-template-rows: repeat(3, 400px);
+  align-items: center;
+}
+
+In the example above, we use align-items to adjust the positioning of some elements on this web page.
+
+There is a grid container with three rows that are 400 pixels tall.
+
+The container has three grid items that do not have a specified width.
+
+Without setting the align-items property, these elements will span the height of the row they are in (400 pixels).
+
+By setting the align-items property to center, the .card <div>s will be centered vertically inside of their rows. They will only be as tall as necessary to contain their content (the words Card 1, etc).
+
+If we specify a height for the .card elements, they will not stretch the height of their row even if align-items: stretch; is set.
+
+This property is declared on grid containers.
+*/
+
+header, footer {
+  background-color: #ffa500;
+  text-align: center;
+  min-width: 500px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 250px 250px;
+  grid-template-rows: repeat(3, 450px);
+  grid-gap: 20px;
+  margin-top: 44px;
+  grid-auto-rows: 500px;
+  justify-items: center;
+  justify-content: center;
+  align-items: stretch;
+}
+
+h2 {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: #ffa500;
+  padding: 10px 0px 10px 10px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.recipe {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+  width: 200px;
+}
+
+.a {
+  
+}
+
+.c {
+  
+}
+
+.time {
+  padding-left: 10px;
+  padding-top: 10px;
+  width: 20px;
+  height: auto;
+}
+
+.mins {
+  display: inline-block;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: #4a4a4a;
+  position: relative;
+  bottom: 5px;
+}
+
+.description {
+  font-family: Work Sans;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.29;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: #4a4a4a;
+  padding: 10px 0px 10px 10px;
+  border-top: 1px solid #4a4a4a;
+}
+
+.logo {
+  width: 115px;
+  height: 21.1px;
+  object-fit: contain;
+  padding: 20px;
+}
+
+.container {
+  min-width: 500px;
+  margin: auto;
+}
+
+footer {
+  margin-top: 44px;
+}

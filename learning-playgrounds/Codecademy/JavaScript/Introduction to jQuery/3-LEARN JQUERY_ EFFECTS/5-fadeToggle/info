@@ -1,0 +1,13 @@
+LEARN JQUERY: EFFECTS
+
+.fadeToggle()
+
+Great work! With fade, our website is starting to look dynamic. .fadeToggle() is the third and final method in this trio of fade methods. This method is similar to .toggle(). If you call .fadeToggle() on an element that is invisible, it will fade in. And if the element is already visible, then .fadeToggle() will make it fade out.
+
+Like the other fade methods, .fadeToggle() can take an argument that sets the duration of the effect.
+
+
+$('div').fadeToggle(1000);
+
+
+In the example above, all div elements will fade in or out over a period of 1000 milliseconds. Hidden div elements will fade in, and visible div elements will fade out.

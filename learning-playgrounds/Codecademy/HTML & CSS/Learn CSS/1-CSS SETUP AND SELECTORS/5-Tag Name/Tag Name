@@ -1,0 +1,17 @@
+CSS SETUP AND SELECTORS
+
+Tag Name
+
+CSS can select HTML elements by using an element’s tag name. A tag name is the word (or character) between HTML angle brackets.
+
+For example, in HTML, the tag for a paragraph element is <p>. The CSS syntax for selecting <p> elements is:
+
+p {
+
+}
+
+In the example above, all paragraph elements will be selected using a CSS selector. The selector in the example above is p. Note that the CSS selector matches the HTML tag for that element, but without the angle brackets.
+
+In addition, two curly braces follow immediately after the selector (an opening and closing brace, respectively). Any CSS properties will go inside of the curly braces to style the selected elements.
+
+

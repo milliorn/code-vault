@@ -1,0 +1,9 @@
+THE DOCUMENT OBJECT MODEL
+
+Attributes of Element Node
+
+DOM element nodes model elements in an HTML document.
+
+Much like an element in an HTML page, the DOM allows us to access a node’s attributes, such as its class, id, and inline style.
+
+In the diagram to the right, we have highlighted the paragraph element with an id of “bio” in the HTML document. If we were accessing that element node in our script, the DOM would allow us to tweak each of those attributes, or simply access them to check their value in the code.

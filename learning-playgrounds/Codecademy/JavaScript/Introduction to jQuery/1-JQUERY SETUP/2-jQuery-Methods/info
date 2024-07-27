@@ -1,0 +1,11 @@
+JQUERY SETUP
+
+jQuery Methods
+
+In the last exercise, you used jQuery to cut twelve lines of code down to three.
+
+Let’s use Legos as an analogy for understanding how jQuery works. With an infinite number of Legos, you could build an entire city — of course, this would take a long time. What if you were given pre-made Lego buildings, Lego roads, Lego parks, etc? You could build a city much faster.
+
+The JavaScript language represents an infinite supply of Lego blocks — the possibilities are endless but time-consuming. The pre-made Lego structures are like jQuery methods. You can use these methods to add dynamic behavior, such as .hide(), .show(), .fadeIn(), .fadeOut() etc., to HTML elements.
+
+The example in the last exercise took twelve lines of JavaScript, but was achieved with only three lines of jQuery’s .click() and .toggle() methods.

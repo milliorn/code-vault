@@ -1,0 +1,31 @@
+<!--
+THE SCRIPT ELEMENT
+
+Defer attribute
+
+When the HTML parser comes across a <script> element, it stops to load its content. Once loaded, the JavaScript code is executed and the HTML parser proceeds to parse the next element in the file. This can result in a slow load time for your website. HTML4 introduced the defer and async attributes of the <script> element to address the user wait-time in the website based on different scenarios.
+
+The defer attribute specifies scripts should be executed after the HTML file is completely parsed. When the HTML parser encounters a <script> element with the defer attribute, it loads the script but defers the actual execution of the JavaScript until after it finishes parsing the rest of the elements in the HTML file.
+
+Here is an example of the defer tag:
+
+<script src="example.js" defer></script> 
+
+When is defer useful?
+
+When a script contains functionality that requires interaction with the DOM, the defer attribute is the way to go. This way, it ensures that the entire HTML file has been parsed before the script is executed.
+-->
+
+<!DOCTYPE html> 
+<html>
+ 
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script id="blue" src="turnBlue.js" defer></script>
+  <script id="yellow" src="turnYellow.js"></script>
+  </head>
+  
+  <body>		
+   	<p class="centered" id="logo">Codecademy</p>
+  </body>
+</html>

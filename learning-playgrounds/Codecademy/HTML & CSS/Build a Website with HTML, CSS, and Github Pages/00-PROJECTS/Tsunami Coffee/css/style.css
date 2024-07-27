@@ -1,0 +1,149 @@
+/*
+Navigate to style.css and add the following image to the .main class as a cover-sized background image:
+Add a padding of 0.75rem to the top and bottom, and 1.25rem to the left and right of the navigation’’s list items.
+Inside of the .supporting img selector, set the height and width dimensions to 10 percent.
+Set the right margin of the image to 5 percent.
+Use rem units to make the h1 text equivalent to 40 pixels.
+Add a width of 100 percent to the .location img CSS rule.
+Write a media query that targets the screen when its width is under 960 pixels and smaller.
+Within the media query you wrote in the last step, set the top padding of the .main class to 0.
+Write a media query for screens under 700 pixels.
+Inside the media query, make the image disappear by ensuring that the .supporting img selector displays nothing.
+Write a media query that targets a screen width less than 470 pixels.
+First, make the rating’s h1 font size the equivalent of 32 pixels using rem units.
+Select the images in the gallery and style them so that they fill the width of the screen.
+Hide the nav inside the footer to appear better on small screens.
+*/
+
+html,
+body {
+	font-family: Helvetica, sans-serif;
+	font-size: 16px;
+	margin: 0;
+	background-color: white;
+}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.main {
+	height: 30rem;
+	padding-top: 1rem;
+	background-image: url("https://content.codecademy.com/courses/freelance-1/unit-5/tsunami-coffee/images/bg-photo.png");
+	padding: 0.75rem 1.25rem;
+	margin-right: 5%;
+}
+
+.main img {
+	width: 15rem;
+	display: block;
+	margin: auto;
+	margin-top: 5rem;
+}
+
+nav {
+	background-color: OrangeRed;
+	color: White;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+}
+
+li {
+	display: inline-block;
+}
+
+.supporting,
+.rating,
+.gallery,
+.location {
+	margin: 4em auto;
+}
+
+.supporting {
+	display: flex;
+	align-items: flex-start;
+	padding: 0 1rem;
+}
+
+.supporting img {
+	height: 10%;
+	width: 10%;
+}
+
+.rating {
+	background-color: OrangeRed;
+	height: 20rem;
+	padding: 0 1rem;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.rating h1 {
+	font-size: 2.5rem;
+}
+
+.gallery img {
+	display: block;
+	width: 30%;
+	margin: 1.5%;
+	float: left;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.location {
+	text-align: center;
+	margin-bottom: 7rem;
+}
+
+.location img {
+	width: 100%;
+}
+
+footer {
+	background-color: OrangeRed;
+	padding: 0 1rem;
+}
+
+footer .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5em 0;
+	color: white;
+}
+
+@media only screen and (max-width: 960px) {
+	.main {
+		padding-top: 0;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.supporting img {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 470px) {
+	.ratings h1 {
+		font-size: 2rem;
+	}
+
+	.gallery img {
+		margin: 0;
+	}
+
+	footer nav {
+		display: none;
+	}
+}

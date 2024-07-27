@@ -1,0 +1,10 @@
+/*
+    Next, split up all variables inside their own partial.
+    Import the variables partial at the top of your main.scss file.
+*/
+@import "helper/variables";
+
+
+$slogan-font: 'Open Sans', sans-serif;
+$slogan-spacing: 0.183em;
+$blue: #204056;

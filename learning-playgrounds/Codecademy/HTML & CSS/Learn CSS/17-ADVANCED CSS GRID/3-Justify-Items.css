@@ -1,0 +1,143 @@
+/*
+ADVANCED CSS GRID
+
+Justify Items
+
+We have referred to “two-dimensional grid-based layout” several times throughout this course.
+
+There are two axes in a grid layout — the column (or block) axis and the row (or inline) axis.
+
+The column axis stretches from top to bottom across the web page.
+
+The row axis stretches from left to right across the web page.
+
+In the following four exercises, we will learn and use properties that rely on an understanding of grid axes.
+
+justify-items is a property that positions grid items along the inline, or row, axis. This means that it positions items from left to right across the web page.
+
+justify-items accepts these values:
+
+start — aligns grid items to the left side of the grid area
+
+end — aligns grid items to the right side of the grid area
+
+center — aligns grid items to the center of the grid area
+
+stretch — stretches all items to fill the grid area
+
+There are several other values that justify-items accepts, which you can read about on the Mozilla Developer Network. The definitions for these values can also be found in the documentation. It is important to note that the page with the definitions includes some values that are not accepted in CSS Grid layout.
+
+<main>
+  <div class="card">Card 1</div>
+  <div class="card">Card 2</div>
+  <div class="card">Card 3</div>
+</main>
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  justify-items: center;
+}
+In the example above, we use justify-items to adjust the positioning of some elements on this web page.
+
+There is a grid container with three columns that are each 400 pixels wide.
+
+The container has three grid items that do not have a specified width.
+
+Without setting the justify-items property, these elements will span the width of the column they are in (400 pixels).
+
+By setting the justify-items property to center, the .card <div>s will be centered inside of their columns. They will only be as wide as necessary to contain their content (the words Card 1, etc).
+
+If we specify a width for the .card elements, they will not stretch the width of their column.
+This property is declared on grid containers.
+*/
+
+header, footer {
+  background-color: #ffa500;
+  text-align: center;
+  min-width: 500px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 250px 250px;
+  grid-template-rows: repeat(3, 450px);
+  grid-gap: 20px;
+  margin-top: 44px;
+  grid-auto-rows: 500px;
+  justify-items: center;
+}
+
+h2 {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: #ffa500;
+  padding: 10px 0px 10px 10px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.recipe {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+  width: 200px;
+}
+
+.a {
+  
+}
+
+.c {
+  
+}
+
+.time {
+  padding-left: 10px;
+  padding-top: 10px;
+  width: 20px;
+  height: auto;
+}
+
+.mins {
+  display: inline-block;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: #4a4a4a;
+  position: relative;
+  bottom: 5px;
+}
+
+.description {
+  font-family: Work Sans;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.29;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: #4a4a4a;
+  padding: 10px 0px 10px 10px;
+  border-top: 1px solid #4a4a4a;
+}
+
+.logo {
+  width: 115px;
+  height: 21.1px;
+  object-fit: contain;
+  padding: 20px;
+}
+
+.container {
+  min-width: 500px;
+  margin: auto;
+}
+
+footer {
+  margin-top: 44px;
+}

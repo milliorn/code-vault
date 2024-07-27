@@ -1,0 +1,17 @@
+CSS SETUP AND SELECTORS
+
+ID Name
+
+If an HTML element needs to be styled uniquely (no matter what classes are applied to the element), we can add an ID to the element. To add an ID to an element, the element needs an id attribute:
+
+<h1 id="large-title"> ... </h1>
+
+Then, CSS can select HTML elements by their id attribute. To select an id element, CSS prepends the id name with a hashtag (#). For instance, if we wanted to select the HTML element in the example above, it would look like this:
+
+#large-title {
+
+}
+
+The id name is large-title, therefore the CSS selector for it is #large-title.
+
+

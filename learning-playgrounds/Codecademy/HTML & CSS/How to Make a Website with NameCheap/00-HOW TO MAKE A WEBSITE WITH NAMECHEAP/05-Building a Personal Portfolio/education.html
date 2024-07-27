@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Personal Portfolio</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+
+<!--
+    Copy the entire header, jumbotron, and footer elements from the about.html page and
+    paste it into the body element of your education.html page.
+    In the header, switch the second href value from education.html to about.html and
+    replace the corresponding text with “About Me”.
+    In the jumbotron, relabel the h2 from “About Me” to “Education”.
+-->
+
+<body>
+
+    <header class="container">
+        <div class="row">
+            <h1 class="col-sm-6">Scott</h1>
+            <nav class="col-sm-6 text-right">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="experience.html">Experience</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="jumbotron">
+        <div class="container"></div>
+        <div class="row">
+            <h2>Education</h2>
+        </div>
+    </section>
+
+    <!--
+        Under the jumbotron element, add a section tag with the class container with a single row.
+        Within this row, add two divs — each with the class col-sm-6.
+
+        Within the first column you just created,
+        add a paragraph element to show the name of your high school,
+        an image of your high school’s logo, and an unordered list with several accomplishments.
+        The paragraph has a font-weight-bold class and the image has a class of portrait.
+
+        Within the second column you just created,
+        add a paragraph element to show the name of your university, an image of your university’s logo,
+        and an unordered list with several accomplishments.
+        The paragraph has a font-weight-bold class and the image has a class of portrait.
+    -->
+    <section class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <p class="font-weight-bold">Monterey High School</p>
+                <img class="portrait"
+                    src="https://fordhaminstitute.org/sites/default/files/styles/single_main_image/public/article/images/high-school.jpg?itok=VDEpJIAq">
+                <ul>
+                    <li>Diploma</li>
+                    <li>Varsity</li>
+                    <li>Honor Roll</li>
+                </ul>
+            </div>
+            <div class="col-sm-6">
+                <p class="font-weight-bold">Texas Tech University</p>
+                <img class="portrait"
+                    src="https://www.everythinglubbock.com/wp-content/uploads/sites/35/2020/03/ttucovid-2-1.jpg?w=1280">
+                <ul>
+                    <li>Degree</li>
+                    <li>Alpha</li>
+                    <li>Beta</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container">
+        <div class="row"></div>
+        <p class="col-sm-4">&copy; 2021 Scott Milliorn</p>
+        <div class="col-sm-2"><a href="https://medium.com" target="_blank">Medium</a></div>
+        <div class="col-sm-2"><a href="https://github.com" target="_blank">Github</a></div>
+        <div class="col-sm-2"><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></div>
+        <div class="col-sm-2"><a href="https://tunein.com/podcasts/" target="_blank">Podcast</a></div>
+    </footer>
+
+</body>
+
+</html>

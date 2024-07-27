@@ -1,0 +1,17 @@
+THE DOCUMENT OBJECT MODEL
+
+What is the DOM?
+
+The Document Object Model, abbreviated DOM, is a powerful tree-like structure that allows programmers to conceptualize hierarchy and access the elements on a web page.
+
+The DOM is one of the better-named acronyms in the field of Web Development. In fact, a useful way to understand what DOM does is by breaking down the acronym but out of order:
+
+The DOM is a logical tree-like Model that organizes a web page’s HTML Document as an Object.
+
+Note: There are other types of documents, such as XML and SVG, that are also modeled as DOM structures.
+
+The DOM is a language-agnostic structure implemented by browsers to allow for web scripting languages, like JavaScript, to access, modify, and update the structure of an HTML web page in an organized way.
+
+For this reason, we like to think of the DOM as the link between an HTML web page and scripting languages.
+
+

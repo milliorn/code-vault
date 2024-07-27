@@ -1,0 +1,27 @@
+<!--
+THE SCRIPT ELEMENT
+
+Async attribute
+
+The async attribute loads and executes the script asynchronously with the rest of the webpage. This means that, similar to the defer attribute, the HTML parser will continue parsing the rest of the HTML as the script is downloaded in the background. However, with the async flag, the script will not wait until the entire page is parsed: it will execute immediately after it has been downloaded. Here is an example of the async tag:
+
+<script src="example.js" async></script>
+
+When is it useful?
+
+Async is useful for scripts that are independent of other scripts in order to function accordingly. Thus, if it does not matter exactly at which point the script file is executed, asynchronous loading is the most suitable option as it optimizes web page load time.
+-->
+
+<!DOCTYPE html> 
+<html>
+ 
+  <head>
+    <link rel="stylesheet" href="style.css">
+   <script id="blue" src="turnBlue.js" async></script>
+  <script id="yellow" src="turnYellow.js"></script>
+  </head>
+  
+  <body>		
+   	<p class="centered" id="logo">Codecademy</p>
+  </body>
+</html>

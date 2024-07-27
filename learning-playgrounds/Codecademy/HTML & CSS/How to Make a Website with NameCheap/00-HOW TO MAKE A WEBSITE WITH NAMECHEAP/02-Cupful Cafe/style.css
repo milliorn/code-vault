@@ -1,0 +1,112 @@
+/*
+  Locate the body selector.
+  Add a font-family property with a value of 'Raleway' and a fall-back font of sans-serif.
+*/
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+/*
+  Locate the h1 selector and assign it a font-size of 40px.
+  Add a color property and set it to the value of #D6B47E.
+*/
+h1 {
+  width: 100%;
+  font-weight: 300;
+  text-align: center;
+  font-size: 40px;
+  color: #D6B47E;
+}
+
+/*
+  Locate the h2 selector. Assign it a font-size of 1.75rem.
+  Add a color property and set it to the value of white.
+*/
+h2 {
+  display: inline-block;
+  text-align: center;
+  background-color: #D6B47E;
+  padding: 3px 10px;
+  margin: 5px;
+  font-size: 1.75rem;
+  color: white;
+}
+
+.menu {
+  border: 2px solid;
+  text-align: center;
+  width: 200px;
+}
+
+/*
+  Add a color property and set it to the value of #D6B47E.
+*/
+h3 {
+  display: inline-block;
+  font-weight: 800;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 10px 25px;
+  color: #D6B47E;
+}
+
+.container {
+  min-width: 775px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/*
+  Locate the .hero class selector and assign it the following background-image:
+*/
+.hero {
+
+  background-size: cover;
+  min-width: 964px;
+  min-height: 422px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("https://content.codecademy.com/projects/make-a-website/lesson-2/cafe.jpg");
+}
+
+.supporting-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 45px 0 0 0;
+}
+
+.supporting-container div {
+  background-size: cover;
+  min-width: 450px;
+  min-height: 345px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 30px;
+}
+
+/*
+  Locate the .upcoming class selector and assign it a background-image of:
+*/
+.upcoming {
+  background-image: url("https://content.codecademy.com/projects/make-a-website/lesson-2/events.jpg");
+}
+
+/*
+  Locate the .roast class selector and assign it a background-image of:
+*/
+.roast {
+  background-image: url("https://content.codecademy.com/projects/make-a-website/lesson-2/roast.jpg");
+}
+
+#footer {
+  text-align: center;
+  color: #D6B47E;
+  font-weight: 300;
+  width: 100%;
+  font-size: 1.25rem;
+}

@@ -1,0 +1,122 @@
+/*
+ADVANCED CSS GRID
+
+Overlapping Elements
+
+Another powerful feature of CSS Grid Layout is the ability to easily overlap elements.
+
+When overlapping elements, it is generally easiest to use grid line names and the grid-area property.
+
+<div class="container">
+  <div class="info">Info!</div> 
+  <img src="#" />
+  <div class="services">Services!</div>
+</div>
+
+.container {
+  display: grid;
+  grid-template: repeat(8, 200px) / repeat(6, 100px);
+}
+
+.info {
+  grid-area: 1 / 1 / 9 / 4;
+}
+
+.services {
+  grid-area: 1 / 4 / 9 / 7;
+}
+
+img {
+  grid-area: 2 / 3 / 5 / 5;
+  z-index: 5;
+}
+
+In the example above, there is a grid container with eight rows and six columns. There are three grid items within the container — a <div> with the class info, a <div> with the class services, and an image.
+
+The info section covers all eight rows and the first three columns. The services section covers all eight rows and the last three columns.
+
+The image spans the 2nd, 3rd, and 4th rows and the 3rd and 4th columns.
+
+The z-index property tells the browser to render the image element on top of the services and info sections so that it is visible.
+*/
+
+.container {
+  display: grid;
+  max-width: 900px;
+  position: relative;
+  margin: auto;
+  grid-gap: 10px;
+  grid-template: repeat(12, 1fr) / repeat(6, 1fr);
+}
+
+h1, h2, h3 {
+  font-family: monospace;
+  text-align: center;
+}
+
+header {
+  background-color: dodgerblue;
+  grid-area: 1 / 1 / 3 / 7;
+}
+
+nav {
+  background-color: beige;
+  grid-area: 3 / 1 / 4 / 7;
+}
+
+.left {
+  background-color: dodgerblue;
+  grid-area: 4 / 1 / 9 /5;
+}
+
+.right {
+  background-color: beige;
+  grid-area: 4 / 5 / 9 / 7;
+}
+
+.overlap {
+  background-color: lightcoral;
+  grid-area: 6 / 4 / 8 / 6;
+  z-index: 5;
+}
+
+footer {
+  background-color: dodgerblue;
+  grid-area: 9 / 1 / 13 / 7;
+}
+
+/*
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Grid Stuff</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Header</h1>
+    </header>
+    <nav>
+      <h1>Nav</h1>
+    </nav>
+    <section class="left">
+      <h2>Left</h2>
+    </section>
+    <div class="overlap">
+      <h3>Overlap!</h3>
+    </div>
+    <section class="right">
+      <h2>Right</h2>
+    </section>
+    <footer>
+      <h1>Footer</h1>
+    </footer>
+  </div>
+</body>
+
+</html>
+*/

@@ -1,0 +1,42 @@
+html {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.hero-image {
+	background-image: url("/img/pattern.jpeg");
+	color: khaki;
+	text-align: center;
+	font-size: 100px;
+	font-weight: bold;
+	height: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.brushes {
+	font-size: 32px;
+	font-weight: bold;
+	color: white;
+	background-color: mediumspringgreen;
+}
+
+.anchor {
+	color: blue;
+	font-weight: bold;
+}
+
+.frames {
+	background-color: lightcoral;
+	font-size: 32px;
+	font-weight: bold;
+	color: white;
+}
+
+.paint {
+	background-color: skyblue;
+	font-size: 32px;
+	font-weight: bold;
+	color: white;
+}

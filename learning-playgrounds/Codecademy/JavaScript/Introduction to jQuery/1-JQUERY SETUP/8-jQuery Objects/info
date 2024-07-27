@@ -1,0 +1,17 @@
+JQUERY SETUP
+
+jQuery Objects
+
+Now that you’ve seen some jQuery in action, let’s dive a bit deeper into syntax. You’ve probably noticed the $ symbol before anything we target. The $ symbol is an alias for the jQuery function. The $ symbol and jQuery are interchangeable.
+
+The jQuery function takes a parameter that targets an element, like '#navMenu', and turns it into a jQuery object. Then, you can call any jQuery method on a jQuery object.
+
+Developers often save jQuery objects in variables, like so:
+
+
+const $jQueryObject = $('.someClass');
+
+
+Notice our variable name, $jQueryObject, starts with the ($) character. It is best practice to name jQuery object variables with a leading $. It is a naming convention that reminds you and lets others know that a given variable is a jQuery object.
+
+With this in mind, let’s improve our code from the previous Exercise.

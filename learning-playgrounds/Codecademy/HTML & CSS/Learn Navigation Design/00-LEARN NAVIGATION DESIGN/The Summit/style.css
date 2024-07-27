@@ -1,0 +1,81 @@
+/*
+    Start by creating some basic link color highlighting and hover state styling for all <a> tags.
+*/
+a {
+    color: #1F6FF0;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/*
+    Style the .nav-link elements at the top of the page so that they show clickability.
+    These elements represent the main site navigation.
+    Because they are internal links,
+    don’t necessarily need to look the same as the external links in the description below.
+*/
+.nav-link {
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #679CF0;
+}
+
+/*
+    Style the main “get on the mountain” button.
+    It is up to you whether to opt for a more skeuomorphic or flat design.
+*/
+.btn {
+    background-color: #679CF0;
+    border-radius: 2px;
+    color: #ffffff;
+    font-family: 'Raleway',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/*
+    Now, create :hover and :active styles for the .btn class.
+*/
+.btn:active {
+    color: #679CF0;
+}
+
+.btn:hover {
+    color: #1F6FF0;
+}
+
+/*
+    Now it’s time to show clickability for the large activity buttons at the bottom of the page.
+    These buttons already look at little like buttons.
+    These buttons can be targeted by class with the .activity selector.
+*/
+.activity {
+    border: 1px solid #2176FF;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/*
+    Now, create hover and active states.
+*/
+.activity:hover {
+    background-color: #679CF0;
+    color: #ffffff;
+    transition: color .1s ease-in, background-color .1s ease-in;
+}
+
+.activity:active {
+    font-size: 40px;
+    transition: font-size .1s;
+    background-color: #ffffff;
+    color: black;
+}

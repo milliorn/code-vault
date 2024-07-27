@@ -1,0 +1,11 @@
+JQUERY SETUP
+
+jQuery Library
+
+We are going to use jQuery to add some interactivity to the MOVE Gear site, an online marketplace for athletic apparel.
+
+To use the jQuery library, index.html must load it with the other dependencies. Take a look at the attached diagram to see where various dependencies load in an HTML document.
+
+The document is loaded from top to bottom. So the style dependencies in the <head> will load first, then the structural elements in the <body> will load next. It has become common practice to link the main JavaScript file at the bottom of the HTML document because a good deal of the content of the script will require that the dependencies, style sheets and elements exist before the browser can run the JavaScript that uses and references those things.
+
+When you add the jQuery library to your project in the next exercise, you will do so on the line before the </body> tag. Because HTML files load from top to bottom, adding the jQuery library at the bottom of your project will ensure that it will not affect the HTML (structure) and CSS (style) load times.

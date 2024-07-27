@@ -1,0 +1,30 @@
+.breadcrumb > li {
+  display: inline;
+  letter-spacing: 6px;
+  color: hsla(88, 100%, 25%, 1);
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font: inherit;
+  font-family: serif;
+}
+
+.breadcrumb li + li::before {
+  content: ">";
+}
+
+.breadcrumb li a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb li.attribute a {
+  color: gray;
+}
+.breadcrumb li.attribute::after {
+  content: "x";
+  color: red;
+  font-size: 10px;
+  vertical-align: super;
+}

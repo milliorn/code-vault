@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <title>Adhoc</title>
+</head>
+
+<body>
+    <!-- Navbar Component
+        It’s a good starter template but we still have to edit this code to fit our needs.
+        Therefore, remove the code that renders these elements:
+        the dropdown option.
+        the disabled link.
+        the search bar.
+
+        Add Adhoc’s logo to the navbar.
+        Locate the element with class "navbar-brand".
+        Delete the text Navbar and replace it with an
+        <img> element with an src value of "https://content.codecademy.com/courses/learn-bootstrap-4/adhoc/logo.png".
+        Remember to assign an appropriate value to the alt attribute.
+
+        According to the design spec, we should have 4 links (not including the brand) in the navbar.
+        Use the second link as a template and make 2 additional links. Change the text of the links to follow the design spec.
+    -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img
+                src="https://content.codecademy.com/courses/learn-bootstrap-4/adhoc/logo.png" alt="adhoc logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Our Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+        </div>
+    </nav>
+
+    <!--
+        Jumbotron
+
+        Under the navbar, there’s a <div> that we’re going to turn into our jumbotron!
+        It currently has some inline CSS that renders a background image.
+        Provide it with a class of "jumbotron" and "jumbotron-fluid" to get a jumbotron that spans the entire screen/viewport.
+
+        Inside the jumbotron, add another <div>.
+        This new <div> is going to act as a background and container for the text we want to insert.
+        Therefore, inside the <div> add an <h1> element followed by a <p>.
+        Use the design spec and add the appropriate text inside both the <h1> and the <p> elements.
+
+        Time to style the elements we just added. We want the new <div> to have:
+        a grey background.
+        white and centered text.
+        larger top and bottom margins by assigning a class of "my-5".
+        This utility class targets and increases the vertical margins of an element.
+        Also, give the <h1> element a display heading by assigning a class of "display-3".
+    -->
+    <div class="jumbotron jumbotron-fluid"
+        style="background:url(https://content.codecademy.com/courses/learn-bootstrap-4/adhoc/jumbotron.png) no-repeat; background-size: cover;">
+        <div class="bg-secondary text-light text-center my-5">
+            <h1 class="display-3 ">Administration made easy</h1>
+            <p class="">Adhoc is an on-demand administration service for your company growth.</p>
+        </div>
+    </div>
+
+    <!-- Container -->
+    <div class="container">
+        <!--
+            Quote Section
+
+            Let’s style the quote under the jumbotron using utility classes.
+            Follow the design spec. Provide the <h2> element with
+            italic font.
+            a light font-weight.
+            Notice the stying of the name, it:
+            is aligned to the right
+            has a bold and italic font
+            the text inside the <span> has a normal weight.
+            Finish up the quote styling by increasing the top and bottom margins of the column containing the quote.
+            You can do so by assigning a class of my-5.
+            -->
+        <div class="row">
+            <div class="col">
+                <h2 class="font-italic font-weight-light my-5">"Thanks to Adhoc we now have beautiful and faithful
+                    service every
+                    day. Our customers are happy and engagement has drastically increased. Highly recommend!"</h2>
+                <p class="text-right font-italic font-weight-bold">-Dave Ellavar, <span
+                        class="font-weight-normal">Academy of Code</span></p>
+            </div>
+        </div>
+        <hr>
+
+        <!--
+            Why Adhoc? Text
+
+            Locate the <h2> element with text Why Adhoc?.
+            Center the text and give it a display heading that follows the design spec.
+
+            In the next row, we’re going to continue following the design spec and add one card in each column.
+            In each column, add a card that:
+            Does not have a border.
+            Has an image icon on the top.
+            Has centered text on the bottom.
+            Here are the linked icons for convenience:
+            experienced icon.
+            fun icon.
+            smart icon
+
+            While the columns look good on a large screen, the contents look squished on a smaller screen.
+            Change the width of the column so that it has a width of 4 on medium, and larger, sized screens.
+            For extra small and small-sized screens, it should have a width of 8.
+
+            Let’s also have the row center the columns containing the cards.
+
+            Increase the vertical margins of the row with the text Why Adhoc and the row containing the cards to space out the rows.
+        -->
+        <div class="row">
+            <div class="col">
+                <h2 class="text-center display-4 my-5">Why Adhoc?</h2>
+            </div>
+        </div>
+
+        <!-- Image Reasons Section -->
+        <div class="row justify-content-center my-5">
+            <div class="col-8 col-md-4">
+                <!-- First card goes here -->
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top"
+                        src="https://content.codecademy.com/courses/learn-bootstrap-4/adhoc/experienced.png"
+                        alt="experienced icon">
+                    <div class="card-body">
+                        <p class="card-text text-center">Some quick example text to build on the card title and make up
+                            the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-8 col-md-4">
+                <!-- Second card goes here -->
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top"
+                        src="https://content.codecademy.com/courses/learn-bootstrap-4/adhoc/fun.png" alt="fun icon">
+                    <div class="card-body">
+                        <p class="card-text text-center">Some quick example text to build on the card title and make up
+                            the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-8 col-md-4">
+                <!-- Third card goes here -->
+                <div class="col">
+                    <!-- Second card goes here -->
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top"
+                            src="https://content.codecademy.com/courses/learn-bootstrap-4/adhoc/smart.png"
+                            alt="smart icon">
+                        <div class="card-body">
+                            <p class="card-text text-center">Some quick example text to build on the card title and make
+                                up
+                                the bulk of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--
+            Meet the Team Section
+
+            Locate the row with the text Meet the Team.
+            According to the design spec, provide that row with utility classes that render a dark background with rounded top border.
+
+            Apply the following styling for the <h2> element:
+            Make the text white.
+            Center the text.
+            Make it a Bootstrap display header.
+        -->
+        <div class="row bg-dark rounded-top">
+            <div class="col">
+                <h2 class="text-white text-center display-4 my-5">Meet the Team</h2>
+            </div>
+        </div>
+
+        <!--
+            Team Pictures Carousel
+
+            Give the bottom row a dark background and a rounded bottom border.
+
+            For each <div> with a class of "carousel-item",
+            assign the nested <img>‘s src a URL to the provided pictures in the intro’s image assets.
+            Also, provide an appropriate value for the alt attribute.
+
+            With the slides set up, we can add some captions to each slide.
+            Style the captions so that it has a black background, no vertical padding, and a rounded-pill border.
+            Inside the captions, add the appropriate text and style it according to the design spec.
+
+            Change the sizing of the carousel to only take up 50% of the width and set the margin to automatically center its contents.
+        -->
+        <div class="row bg-dark rounded-bottom pb-5">
+            <div class="col">
+                <!-- Carousel Component -->
+                <div id="carouselExampleControls" class="carousel slide w-50 mx-auto" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-interval="10000">
+                            <img src="https://content.codecademy.com/courses/learn-bootstrap-4/adhoc/angela.png"
+                                class="d-block w-100" alt="angela">
+                            <div class="carousel-caption bg-dark rounded-pill py-0">
+                                <p class="text-light text-center font-weight-bold mb-0">CEO <span
+                                        class="font-weight-light">Angela</span></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-interval="10000">
+                            <img src="https://content.codecademy.com/courses/learn-bootstrap-4/adhoc/amie.png"
+                                class="d-block w-100" alt="amie">
+                            <div class="carousel-caption bg-dark rounded-pill py-0">
+                                <p class="text-light text-center font-weight-bold mb-0">CFO <span
+                                        class="font-weight-light">Amie</span></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-interval="10000">
+                            <img src="https://content.codecademy.com/courses/learn-bootstrap-4/adhoc/andy.png"
+                                class="d-block w-100" alt="andy">
+                            <div class="carousel-caption bg-dark rounded-pill py-0">
+                                <p class="text-light text-center font-weight-bold mb-0">COO <span
+                                        class="font-weight-light">Andy</span></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-interval="10000">
+                            <img src="https://content.codecademy.com/courses/learn-bootstrap-4/adhoc/brian.png"
+                                class="d-block w-100" alt="brian">
+                            <div class="carousel-caption bg-dark rounded-pill py-0">
+                                <p class="text-light text-center font-weight-bold mb-0">CTO <span
+                                        class="font-weight-light">Andy</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--
+        Footer
+
+        The last element we have to style is the <footer>, center the text.
+-->
+    <footer class="text-center">2019 Adhoc &copy;</footer>
+
+    <!-- Bootstrap's JavaScript Files -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"
+        integrity="sha512-6UofPqm0QupIL0kzS/UIzekR73/luZdC6i/kXDbWnLOJoqwklBK6519iUnShaYceJ0y4FaiPtX/hRnV/X/xlUQ=="
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

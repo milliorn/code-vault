@@ -1,0 +1,20 @@
+CSS SETUP AND SELECTORS
+
+Chaining and Specificity
+
+In the last exercise, instead of selecting all h5 elements, you selected only the h5 elements nested inside the .description elements. This CSS selector was more specific than writing only h5. Adding more than one tag, class, or ID to a CSS selector increases the specificity of the CSS selector.
+
+For instance, consider the following CSS:
+
+p {
+  color: blue;
+}
+
+
+.main p {
+  color: red;
+}
+
+Both of these CSS rules define what a p element should look like. Since .main p has a class and a p tag as its selector, only the p elements inside the .main element will appear red. This occurs despite there being another more general rule that states p elements should be blue.
+
+

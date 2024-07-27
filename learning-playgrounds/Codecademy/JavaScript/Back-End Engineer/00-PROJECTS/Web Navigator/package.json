@@ -1,0 +1,15 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "This project, Web Navigator, simulates the navigational operations of a web browser such as :",
+  "main": "LinkedList.js",
+  "scripts": {
+    "start": "nodemon script.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "2.0.21"
+  }
+}

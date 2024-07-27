@@ -1,0 +1,165 @@
+html,
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  background-color: white;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/*
+  Navigate to style.css and add the following image to the .main class as a cover-sized background image:
+  Add a padding of 0.75rem to the top and bottom, and 1.25rem to the left and right of the navigation’’s list items.
+*/
+.main {
+  height: 30rem;
+  padding-top: 1rem;
+  background-image: url("https://content.codecademy.com/courses/freelance-1/unit-5/tsunami-coffee/images/bg-photo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 0.75rem 1.25rem;
+}
+
+.main img {
+  width: 15rem;
+  display: block;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+nav {
+  background-color: OrangeRed;
+  color: White;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+li {
+  display: inline-block;
+}
+
+.supporting,
+.rating,
+.gallery,
+.location {
+  margin: 4em auto;
+}
+
+.supporting {
+  display: flex;
+  align-items: flex-start;
+  padding: 0 1rem;
+}
+
+/*
+  Inside of the .supporting img selector, set the height and width dimensions to 10 percent.
+  Set the right margin of the image to 5 percent.
+  Use rem units to make the h1 text equivalent to 40 pixels.
+  This can be calculated based on the html element’s font size.
+*/
+.supporting img {
+  width: 10%;
+  height: 10%;
+  margin-right: 5%;
+}
+
+.rating {
+  background-color: OrangeRed;
+  height: 20rem;
+  padding: 0 1rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+}
+
+.rating h1 {
+  font-size: 2.5rem;
+}
+
+.gallery img {
+  display: block;
+  width: 30%;
+  margin: 1.5%;
+  float: left;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.location {
+  text-align: center;
+  margin-bottom: 7rem;
+}
+
+/*
+  Add a width of 100 percent to the .location img CSS rule.
+*/
+.location img {
+  width: 100%;
+}
+
+footer {
+  background-color: OrangeRed;
+  padding: 0 1rem;
+}
+
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5em 0;
+  color: white;
+}
+
+/*
+  Write a media query that targets the screen when its width is under 960 pixels and smaller.
+  Within the media query you wrote in the last step, set the top padding of the .main class to 0.
+*/
+@media only screen and (max-width: 960px) {
+  .class {
+    padding: 0%;
+  }
+}
+
+/*
+  Write a media query for screens under 700 pixels.
+  Inside the media query, make the image disappear by ensuring that the .supporting img selector displays nothing.
+*/
+@media only screen and (max-width: 700px) {
+  .supporting img {
+    display: none;
+  }
+}
+
+/*
+  Write a media query that targets a screen width less than 470 pixels.
+  First, make the rating’s h1 font size the equivalent of 32 pixels using rem units.
+  The images in the gallery are too small for small screens.
+  Select the images in the gallery and style them so that they fill the width of the screen.
+  Then set their margin to 0 so they span across the entire page.
+  The footer’s text is not formatted correctly on small screen sizes.
+*/
+@media only screen and (max-width: 470px) {
+  .h1 {
+    font-size: 2.0rem;
+  }
+
+  .img {
+    margin: 0%;
+  }
+
+  .footer {
+    display: none;
+  }
+}

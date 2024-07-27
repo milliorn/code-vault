@@ -1,0 +1,44 @@
+/*
+CSS GRID ESSENTIALS
+
+Creating a Grid
+
+To set up a grid, you need to have both a grid container and grid items. The grid container will be a parent element that contains grid items as children and applies overarching styling and positioning to them.
+
+To turn an HTML element into a grid container, you must set the element’s display property to grid (for a block-level grid) or inline-grid (for an inline grid). Then, you can assign other properties to lay out the grid.
+*/
+
+.grid {
+  border: 2px blue solid;
+  width: 400px;
+  height: 500px;
+  display: grid;
+}
+
+.box {
+  background-color: beige;
+  color: black;
+  border-radius: 5px;
+  border: 2px dodgerblue solid;
+}
+
+/*
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel='stylesheet' type='text/css' href='style.css'></head>
+  
+<body>
+  <div class="grid">
+    <div class="box a">A</div>
+    <div class="box b">B</div>
+    <div class="box c">C</div>
+    <div class="box d">D</div>
+    <div class="box e">E</div>
+    <div class="box f">F</div>
+    <div class="box g">G</div>
+  </div>
+</body>
+
+</html>
+*/

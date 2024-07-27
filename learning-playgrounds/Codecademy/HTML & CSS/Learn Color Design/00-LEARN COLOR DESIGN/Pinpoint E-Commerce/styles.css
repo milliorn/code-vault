@@ -1,0 +1,585 @@
+/* Site Stylesheet
+  1. Global Styles
+  2. Typography Styles
+  3. Structure Styles
+  4. Module Styles
+  5. Component Styles
+======================================== */
+
+/* 1. Global Styles
+======================================== */
+* {
+    box-sizing: border-box;
+  }
+
+  html {
+    height: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    width: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    height: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    width: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .clearfix::after {
+    content: " ";
+    clear: both;
+    display: table;
+  }
+
+  .float-right {
+    float: right;
+  }
+
+  /* 2. Typography Styles
+  ======================================== */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #414546;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-weight: 700;
+    transition: font-size 0.25s ease;
+  }
+
+  h1 {
+    font-size: calc(64px / 1.5);
+    line-height: 1.25;
+  }
+
+  h2 {
+    font-size: calc(64px / 1.5);
+  }
+
+  h3 {
+    font-size: calc(45px / 1.5);
+  }
+
+  h4 {
+    font-size: calc(23px / 1.5);
+  }
+
+  @media(min-width: 720px) {
+    h1 {
+      font-size: calc(64px / 1.25);
+    }
+
+    h2 {
+      font-size: calc(45px / 1.25);
+    }
+
+    h3 {
+      font-size: calc(32px / 1.25);
+    }
+
+    h4 {
+      font-size: calc(23px / 1.25);
+    }
+  }
+
+  @media(min-width: 1024px) {
+    h1 {
+      font-size: 64px;
+    }
+
+    h2 {
+      font-size: 45px;
+    }
+
+    h3 {
+      font-size: 32px;
+    }
+
+    h4 {
+      font-size: 23px;
+    }
+  }
+
+  p {
+    color: #414546;
+    font-family: 'Roboto', Georgia, serif;
+    font-size: 16px;
+    line-height: 23px;
+    margin: 0 0 15px;
+  }
+
+/*
+Let’s target our a selector and update it’s color to #42A5F5.
+You can find this selector in section 2 of our stylesheet.
+*/
+  a {
+    color: #42A5F5;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 23px;
+  }
+
+  li {
+    color: #414546;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 23px;
+    list-style: none;
+  }
+
+  label {
+    color: #414546;
+    display: block;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    margin-bottom: 5px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  b,
+  strong {
+    font-weight: 700;
+  }
+
+  small {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 1.25;
+  }
+
+  /* 3. Structure Styles
+  ======================================== */
+  .container {
+    margin: 0 auto;
+    max-width: 1160px;
+    padding: 0 15px;
+  }
+
+/*
+    Let’s add 20px of space to the outside of our .divider selector.
+    You can find this selector in section 3, Structure Styles, of our stylesheet.
+*/
+  .divider {
+    border: none;
+    border-bottom: 1px solid #F2F3F5;
+    clear: both;
+    width: 100%;
+    margin: 20px 20px;
+  }
+
+  @media(min-width: 720px) {
+    .col-1-2 {
+      float: left;
+      width: calc(97.5%/2);
+    }
+
+    .col-1-2:not(:last-child) {
+      margin-right: 2.5%;
+    }
+
+    .col-1-3 {
+      float: left;
+      width: calc(95%/3);
+    }
+
+    .col-1-3:not(:last-child) {
+      margin-right: 2.5%;
+    }
+
+    .col-1-4 {
+      float: left;
+      width: calc(92.5%/4);
+    }
+
+    .col-1-4:not(:last-child) {
+      margin-right: 2.5%;
+    }
+  }
+
+  /* 4. Modules Styles
+  ======================================== */
+
+  /* Site Navigation */
+  .site-header {
+    background-color: #EBEBEB;
+    padding: 30px 15px 0;
+  }
+
+  .site-header-nav {
+    align-items: center;
+    display: flex;
+  }
+
+  .site-nav-left,
+  .site-nav-right {
+    align-items: center;
+    display: flex;
+  }
+
+  .site-nav-right {
+    float: right;
+    margin-left: auto;
+  }
+
+  .site-nav-left li:not(:first-child),
+  .site-nav-right li {
+    display: none;
+    font-weight: 700;
+    line-height: 0;
+  }
+
+  .site-nav-mobile li {
+    display: inline-block;
+  }
+
+  @media(min-width: 768px) {
+    .site-nav-left li:not(:first-child),
+    .site-nav-right li {
+      display: inline-block;
+    }
+
+    .site-nav-mobile,
+    .site-nav-mobile li {
+      display: none;
+    }
+  }
+
+/*
+    Let’s fix this by targeting the link elements and give them margin to only one side, the right.
+    In section 4, Modules Styles, of your stylesheet location the selector group of:
+*/
+  .site-nav-left li:not(:last-child),
+  .site-nav-right li:not(:last-child),
+  .site-nav-mobile li:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .site-nav-left .logo {
+    width: 120px;
+  }
+
+/*
+    Lastly, let’s make sure our navigation elements are clearly visible for our users.
+    Let’s update the color of our links from gray to white.
+    Find the selector .site-nav-link in section 4 of our stylesheet.
+*/
+  .site-nav-link {
+    color: white;
+    text-decoration: none;
+  }
+
+/*
+    One place we can do this is in the navigation.
+    Let’s make the active link reflect our brand’s yellow. The yellow hexadecimal value is #FFAA00.
+*/
+  .site-nav-link.active {
+    color: #FFAA00;
+  }
+
+  /* Site Footer */
+  .footer {
+    padding: 30px 30px 60px;
+  }
+
+  .footer-section {
+    margin-bottom: 15px;
+  }
+
+  @media(min-width: 720px) {
+    .footer-section {
+      margin-bottom: 0;
+    }
+  }
+
+  .footer .logo {
+    margin-bottom: 5px;
+    width: 100px;
+  }
+
+  .footer a  {
+    color: #959595;
+    text-decoration: none;
+  }
+
+  .footer p  {
+    margin-bottom: 5px;
+  }
+
+  .footer-email-input {
+    margin-right: 2.5%;
+    width: 68% !important;
+  }
+
+  .footer-email-button {
+    font-size: 12px !important;
+    padding: 10px !important;
+    width: 27.5% !important;
+  }
+
+  @media(min-width: 768px) {
+    .footer-email-input {
+      width: 57% !important;
+    }
+
+    .footer-email-button {
+      width: 37.5% !important;
+    }
+  }
+
+  /* 5. Component Styles
+  ======================================== */
+  .alert {
+    border-radius: 3px;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    text-align: left;
+  }
+
+  .alert-content {
+    align-items: center;
+    display: flex;
+  }
+
+/*
+Let’s up the background of the alert selector .alert-error to #FC472E.
+You can find this selector in section 5, Component Styles.
+*/
+  .alert-error {
+    background-color: #FC472E;
+  }
+
+  .alert img {
+    display: inline-block;
+    height: 15px;
+    margin-right: 5px;
+    width: 15px;
+  }
+
+  .alert p {
+    color: #FFFFFF;
+    display: inline-block;
+    margin-bottom: 0;
+  }
+
+  .button {
+    border-radius: 3px;
+    color: #FFFFFF;
+    display: inline-block;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    transition: opacity 0.5s ease;
+  }
+
+  .button:hover {
+    opacity: 0.75;
+  }
+
+/*
+Let’s update the button’s background colors to reflect our site’s branding.
+The button used on the page should have a background color of #00CF63.
+The button used for navigation or non-essential actions should use the hexadecimal of #FFAA00.
+*/
+  .button-primary .button-secondary {
+    background-color: #FFAA00;
+  }
+
+  .button-full {
+    width: 100%;
+  }
+
+  .button-small {
+    font-size: 13px;
+    padding: 10px 30px;
+  }
+
+  .card {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 0 40px 2px rgba(0, 0, 0, 0.1);
+    padding: 30px 30px 15px;
+  }
+
+  .chip {
+    display: flex;
+    align-items: center;
+  }
+
+  .chip-img-container {
+    border-radius: 30em;
+    float: left;
+    margin-right: 15px;
+    overflow: hidden;
+    height: 60px;
+    width: 60px;
+  }
+
+  .chip-content-container {
+    float: left;
+  }
+
+  .chip-content-title {
+    margin-bottom: 0;
+  }
+  .chip-content-description {
+    color: #8F9196;
+    margin-bottom: 0;
+  }
+
+  input,
+  select,
+  textarea {
+    background-color: #FFFFFF;
+    border: 1px solid #F2F3F5;
+    border-radius: 3px;
+    box-shadow: inset 1px 1px 3px 0 rgba(189,191,192,0.10);
+    height: 35px;
+    margin-bottom: 15px;
+    padding: 10px;
+    transition: border-color 0.5s ease;
+    width: 100%;
+  }
+
+  input[type="submit"] {
+    cursor: pointer;
+    height: auto;
+    width: auto;
+  }
+
+/*
+Great so we alerted the user that something went wrong with an alert component,
+but now we need to visually show them where the issue is on the page.
+*/
+  input:active,
+  input:focus,
+  textarea:active,
+  textarea:focus {
+    border: 1px solid #FC472E;
+    outline: none;
+  }
+
+  textarea {
+    height: 100px;
+  }
+
+  .input-error {
+    border-color: #F2F3F5;
+  }
+
+  .radio-item {
+    margin-bottom: 15px;
+  }
+
+  .radio-item input {
+     box-shadow: none;
+     display: inline-block;
+     margin-bottom: 0px;
+  }
+
+  /* 6. Page Styles
+  ======================================== */
+
+/*
+    Let’s start by adding better spacing to our site’s hero section.
+    Increase the top and bottom padding of CSS selector .site-main to 60px.
+    This selector can be found in section 6, Page Styles, of the stylesheets.
+*/
+  .site-main {
+    padding: 0 15px;
+    position: relative;
+    padding: 60px 60px;
+  }
+
+  .site-main-background {
+    bottom: 0;
+    display: block;
+    height: 600px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+/*
+    Then within the .site-main-header, update the bottom margin to 60px.
+    This CSS selector can be found in section 6, too.
+*/
+  .site-main-header {
+    margin-bottom: 60px;
+  }
+
+/*
+    Let’s update the backgrounds of the CSS selectors .site-header and .site-main-background from #EBEBEB to #34474F.
+*/
+  .site-main-header .site-main-background {
+    background-color: #34474F;
+  }
+
+/*
+    In your styles.css file, find .site-main-header h1 and .site-main-header p.
+    Update their color property to from it’s current color to white.
+*/
+  .site-main-header h1,
+  .site-main-header p {
+    color: white;
+  }
+
+  .section-header {
+    font-size: 23px;
+    line-height: 33px;
+    margin-bottom: 15px;
+  }
+
+/*
+    Now let’s add some whitespace to our items we are ordering.
+    Again we are going to add space to the top and bottom of these elements.
+    Go ahead and add 50px of space to the .order-item selector.
+*/
+  .order-item {
+    display: block;
+    margin-top: 30px;
+    margin: 50px 50px;
+  }
+
+  .item-price {
+    text-align: right;
+  }
+
+  .order-charge li {
+    display: block;
+  }
+
+/*
+    Let’s add 30px spacing to the outside of the selector,
+    .help-box, 15px of spacing to inside of the element and making the background #FFAA00.
+*/
+  .help-box {
+    background-color: #FFAA00;
+    border-radius: 3px;
+    clear: both;
+    display: block;
+    margin: 30px;
+    padding: 15px;
+  }
+
+
+  .help-box p {
+    margin-bottom: 0
+  }

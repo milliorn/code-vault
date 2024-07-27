@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Personal Portfolio</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <!--
+        Copy the entire header element from the index.html page and
+        paste it within the top of the body element within your about.html page.
+        The only change will be switching the first href value from about.html to index.html and
+        replacing the corresponding text with “Home”.
+    -->
+    <header class="container">
+        <div class="row">
+            <h1 class="col-sm-6">Scott</h1>
+            <nav class="col-sm-6 text-right">
+                <a href="index.html">Home</a>
+                <a href="education.html">Education</a>
+                <a href="experience.html">Experience</a>
+            </nav>
+        </div>
+    </header>
+
+    <!--
+        Copy the entire jumbotron section from your home.html page and paste it into your about.html page
+        underneath the header element.
+        Inside of this newly duplicated row,
+        delete the existing h3 element and modify the h2 element so that it now says “About Me”
+        instead of your original role of developer.
+    -->
+    <section class="jumbotron">
+        <div class="container"></div>
+        <div class="row">
+            <h2>About Me</h2>
+        </div>
+    </section>
+
+    <!--
+        Now we’ve reached the part of the site that will present who you are as a person.
+        Underneath the jumbotron section,
+        create a section container with a div with the classes row and justify-content-center.
+
+        Inside of this row, add another div with a col-sm-6 class.
+
+        Nested inside of this div will be an img element with an src which is a url that is a picture of you.
+
+        Underneath this img element add a paragraph that describes who you are and
+        what you’re passionate about. This paragraph should be 4-5 sentences in length.
+    -->
+    <section class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-6">
+                <img src="https://content.codecademy.com/projects/personal_portfolio/profile_image.jpg">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--
+        Copy the entire footer element from the home.html page and paste it at the bottom of the about.html
+        body element.
+    -->
+    <footer class="container">
+        <div class="row"></div>
+        <p class="col-sm-4">&copy; 2021 Scott Milliorn</p>
+        <div class="col-sm-2"><a href="https://medium.com" target="_blank">Medium</a></div>
+        <div class="col-sm-2"><a href="https://github.com" target="_blank">Github</a></div>
+        <div class="col-sm-2"><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></div>
+        <div class="col-sm-2"><a href="https://tunein.com/podcasts/" target="_blank">Podcast</a></div>
+    </footer>
+</body>
+
+</html>
