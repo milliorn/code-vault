@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="freeCodeCamp Product Landing Page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Landing Page</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+  </head>
+
+  <body class="bg-gray-200 dark:bg-gray-900 dark:text-gray-50">
+    <!-- Your product landing page should have a header element with a corresponding id="header" -->
+    <!-- The navbar should always be at the top of the viewport -->
+    <header
+      id="header"
+      class="bg-gray-400 dark:bg-gray-600 py-1 px-4 fixed top-0 w-full z-10 mx-auto my-0"
+    >
+      <div
+        class="container mx-auto flex justify-between items-center max-w-xs sm:max-w-xl md:max-w-2xl lg:max-w-3xl 2xl:max-w-4xl"
+      >
+        <img
+          src="https://images.unsplash.com/photo-1549924231-f129b911e442?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+          alt="website logo"
+          id="header-img"
+          width="189"
+          height="126"
+          class="w-20 h-auto"
+        />
+        <!-- Within the #header element, you can see a nav element with a corresponding id="nav-bar" -->
+        <nav id="nav-bar" class="">
+          <ul class="flex space-x-4">
+            <!-- You can see at least three clickable elements inside the nav element, each with the class nav-link -->
+            <!-- When you click a .nav-link button in the nav element, you are taken to the corresponding section of the landing page
+-->
+            <li class="">
+              <a class="nav-link" href="#product">Product</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#Ipsum">Ipsum</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#Dolor">Dolor</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <h1 class="text-center capitalize my-24 font-bold text-xl">
+      Your Product Landing Page
+    </h1>
+
+    <main
+      class="max-w-xs sm:max-w-xl md:max-w-2xl lg:max-w-3xl 2xl:max-w-4xl mx-auto"
+    >
+      <span id="product"></span>
+      <section class="text-center my-24">
+        <h2 class="font-bold capitalize">Our product</h2>
+        <p class="mt-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+          deserunt odit ex asperiores fuga dolores natus accusamus sed facilis
+          deleniti veniam alias, beatae, expedita eius rem vero numquam enim
+          aliquid.
+        </p>
+
+        <div class="mt-8">
+          <!-- You can watch an embedded product video with id="video" -->
+          <!-- Using multiple sources as fallbacks for a video tag -->
+          <!-- 'Elephants Dream' by Orange Open Movie Project Studio, licensed under CC-3.0, hosted by archive.org -->
+          <!-- Poster hosted by Wikimedia -->
+          <video
+            class="flex justify-center mx-auto my-0 p-1"
+            id="video"
+            width="620"
+            controls
+            poster="https://upload.wikimedia.org/wikipedia/commons/e/e8/Elephants_Dream_s5_both.jpg"
+          >
+            <source
+              src="https://archive.org/download/ElephantsDream/ed_hd.ogv"
+              type="video/ogg"
+            />
+            <source
+              src="https://archive.org/download/ElephantsDream/ed_hd.avi"
+              type="video/avi"
+            />
+            <source
+              src="https://archive.org/download/ElephantsDream/ed_1024_512kb.mp4"
+              type="video/mp4"
+            />
+
+            Sorry, your browser doesn't support embedded videos, but don't
+            worry, you can
+            <a
+              href="https://archive.org/download/ElephantsDream/ed_1024_512kb.mp4"
+            >
+              download the MP4
+            </a>
+            and watch it with your favorite video player!
+          </video>
+        </div>
+      </section>
+
+      <span id="Ipsum"></span>
+      <section id="" class="text-center my-24">
+        <h2 class="font-bold capitalize">Ipsum</h2>
+        product ipsum dolor sit amet consectetur adipisicing elit. Minus
+        aspernatur vel unde molestiae dolore optio enim saepe facilis,
+        consectetur ex culpa aut, ratione fuga voluptate voluptatum, placeat
+        molestias ab praesentium!
+      </section>
+
+      <span id="Dolor"></span>
+      <section id="" class="text-center my-24">
+        <h2 class="font-bold capitalize">Dolor</h2>
+        product ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+        rem suscipit nemo corporis quas sequi illo, accusamus doproductque
+        repellat, deserunt quis quod enim impedit quae! Dolore possimus unde rem
+        voluptatibus!
+      </section>
+
+      <!-- Your landing page has a form element with a corresponding id="form" -->
+      <form
+        id="form"
+        class="max-w-lg mx-auto p-1 my-4"
+        action="https://www.freecodecamp.com/email-submit"
+      >
+        <h3 class="text-center font-bold text-lg my-4">Want to Contact Us?</h3>
+        <div class="flex items-center">
+          <label class="font-bold mb-2 mr-2 hidden" for="email"
+            >Email Address</label
+          >
+          <input
+            class="flex-1 border border-gray-400 p-2 rounded-md text-black"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+            required
+          />
+          <input
+            class="bg-blue-600 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded ml-2"
+            type="submit"
+            id="submit"
+            value="Submit"
+          />
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

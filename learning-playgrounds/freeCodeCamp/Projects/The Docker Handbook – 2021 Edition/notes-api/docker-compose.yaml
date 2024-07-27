@@ -1,0 +1,41 @@
+version: "3.8"
+# The services block holds the definitions for each of the services or containers in the application.
+services:
+  # defines a new service in the application and holds necessary information to start the container.
+  db:
+    # holds the image repository and tag used for this container.
+    image:
+      postgres:12
+      # name of the container
+    container_name:
+      notes-db-dev
+      # volume mappings for the service and supports named volumes, anonymous volumes, and bind mounts
+    volumes:
+      - notes-db-dev-data:/var/lib/postgresql/data
+        # map holds the values of the various environment variables needed for the service
+    environment:
+      POSTGRES_DB: notesdb
+      POSTGRES_PASSWORD: secret
+    # The api service doesn't come with a pre-built image. Instead it has a build configuration.
+  api:
+    build:
+      context: ./api
+      dockerfile:
+        ../Dockerfile.dev
+        # name of the image to be built
+    image: notes-api:dev
+    container_name: notes-api-dev
+    environment:
+      DB_HOST: db ## same as the database service name
+      DB_DATABASE: notesdb
+      DB_PASSWORD: secret
+    volumes:
+      - /home/node/app/node_modules
+      - ./api:/home/node/app
+        # defines any port mapping
+    ports:
+      - 3000:3000
+# defines any name volume needed by any of the services
+volumes:
+  notes-db-dev-data:
+    name: notes-db-dev-data

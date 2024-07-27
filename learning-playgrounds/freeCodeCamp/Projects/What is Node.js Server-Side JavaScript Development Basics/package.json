@@ -1,0 +1,17 @@
+{
+  "name": "what-is-node.js-server-side-javascript-development-basics",
+  "version": "1.0.0",
+  "description": "https://www.freecodecamp.org/news/node-js-basics/",
+  "main": "script.js",
+  "scripts": {
+    "start": "node script.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express.js": "^1.0.0",
+    "mysql": "^2.18.1"
+  }
+}

@@ -1,0 +1,20 @@
+.drink-card-container {
+  container-type: inline-size;
+}
+
+@container (max-width: 450px) {
+  .drink-card-container .drink-card {
+    flex-direction: column;
+  }
+}
+
+.info {
+  container-type: inline-size;
+  container-name: drink-info;
+}
+
+@container drink-info (max-width: 200px) {
+  .info p {
+    display: none;
+  }
+}

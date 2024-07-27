@@ -1,0 +1,30 @@
+# validator.yaml file
+password:
+  pattern: ^(?!.*[\s])(?=.*[A-Z])(?=.*[a-z])(?=.*\d)[A-Za-z\d@$!%*#?&]{8,}$
+  description: |
+    - At least 8 characters
+    - At least one uppercase letter
+    - At least one lowercase letter
+    - At least one digit
+    - Allowed special characters: @$!%*#?&
+
+nigerianPhoneNumber:
+  pattern: ^(\+?234|0)[789]\d{9}$
+  description: |
+    - Nigerian phone number format
+    - Starts with +234 or 0
+    - Followed by 7, 8, or 9
+    - Total of 11 digits
+
+email:
+  pattern: ^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$
+  description: |
+    - Valid email address format
+    - Example: example@example.com
+
+username:
+  pattern: ^[a-zA-Z0-9_-]{3,16}$
+  description: |
+    - Allowed characters: letters (upper and lower case), numbers, underscore (_), and hyphen (-)
+    - Minimum length: 3 characters
+    - Maximum length: 16 characters

@@ -1,0 +1,6 @@
+{
+  "description": "",
+  "scripts": {
+    "start": "ts-node index.ts"
+  }
+}

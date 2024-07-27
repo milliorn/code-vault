@@ -1,0 +1,19 @@
+# pushes the base image from a remote repository and defines the starting point for the image layers.
+FROM node:18-alpine
+
+# sets the working directory for any RUN, CMD, ENTRYPOINT, COPY and ADD instructions that follow it in the Dockerfile.
+WORKDIR /dockerize-react/
+
+# copies the files from the local file system into the container file system.
+COPY public/ /dockerize-react/public/
+COPY src/ /dockerize-react/src/
+COPY package.json /dockerize-react/
+
+# installs the dependencies and packages defined in package.json
+RUN npm install
+
+# exposes the port 3000 to the host machine
+EXPOSE 3000
+
+# defines the command to run the application
+CMD ["npm", "start"]

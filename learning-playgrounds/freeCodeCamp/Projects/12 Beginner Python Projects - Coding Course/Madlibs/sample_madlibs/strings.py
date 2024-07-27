@@ -1,0 +1,7 @@
+ADJ = "Adjective: "
+NOUN = "Noun: "
+PLURAL = "Noun (plural): "
+BODY_PART = "Body part: "
+PAST_TENSE = "Verb (past tense): "
+VERB = "Verb: "
+SPELL = "Spell: "

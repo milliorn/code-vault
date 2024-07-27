@@ -1,0 +1,28 @@
+#root {
+  margin: 0 auto;
+  max-width: 80rem; /* 1280px */
+  padding: 2rem;
+  text-align: center;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Default styles for larger screens */
+/* You can put your default styles here */
+
+@media (max-width: 768px) {
+  /* Mobile-specific styles */
+  body {
+    font-size: 16px; /* Adjust font size for mobile */
+  }
+  .container {
+    padding: 1rem; /* Add spacing for smaller screens */
+  }
+  /* Adjust other styles as needed */
+}

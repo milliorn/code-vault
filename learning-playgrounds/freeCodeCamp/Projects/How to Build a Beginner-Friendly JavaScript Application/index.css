@@ -1,0 +1,26 @@
+body {
+  background-color: gray;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  border: 1px solid #fff;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.action {
+  margin: 10px;
+}
+
+button {
+  cursor: pointer;
+}

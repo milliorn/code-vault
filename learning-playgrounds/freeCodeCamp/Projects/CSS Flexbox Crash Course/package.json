@@ -1,0 +1,15 @@
+{
+  "name": "css-flexbox-crash-course",
+  "version": "1.0.0",
+  "description": "<https://www.freecodecamp.org/news/learn-css-flexbox/>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "create-html-boilerplate": "^0.2.0",
+    "stylelint": "^15.10.1"
+  }
+}

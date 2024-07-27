@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans&display=swap");
+
+:root {
+  --btn-margin: 0.125rem; /* 2px */
+  --btn-size: 1.5em;
+}
+
+html,
+body {
+  align-items: center;
+  background-color: #1f2937;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  line-height: 0.75rem; /* 12px */
+  overflow: hidden;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: flex-start; /* Push content to the top */
+  left: 50%;
+  position: absolute;
+  top: 0; /* Start from the top */
+  transform: translate(-50%, 0); /* Translate only horizontally */
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  color: #e5e7eb;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.875rem; /* 30px */
+  font-weight: 600;
+  line-height: 2.25rem; /* 36px */
+  text-align: center;
+}
+
+main > div {
+  background: #f9fafb;
+}
+
+#calculator * {
+  font-family: "Open Sans", sans-serif;
+}
+
+#calculator {
+  align-items: center;
+  border-radius: 1.5rem; /* 24px */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  justify-content: center;
+  margin: auto;
+  padding: 1rem;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+}
+
+.btn {
+  border-radius: 1.5rem; /* 24px */
+  font-size: 3rem; /* 48px */
+  height: var(--btn-size);
+  line-height: 1;
+  margin: var(--btn-margin);
+  padding: var(--btn-margin);
+  width: var(--btn-size);
+}
+
+#clear {
+  grid-column: 5/6;
+  grid-row: 2/7;
+  height: calc(4 * var(--btn-size) + 11 * var(--btn-margin));
+}
+
+.output {
+  align-content: center;
+  background-color: #737373;
+  border-radius: 0.75rem; /* 12px */
+  color: #e5e7eb;
+  font-size: 3em;
+  grid-column: 1/6;
+  height: calc(var(--btn-size) - 2 * var(--btn-margin));
+  line-height: calc(var(--btn-size) - 2 * var(--btn-margin));
+  margin: var(--btn-margin);
+  padding: var(--btn-margin);
+  text-align: right;
+  width: calc(5 * var(--btn-size) + 10 * var(--btn-margin));
+}
+
+@media only screen and (max-width: 320px) {
+  :root {
+    --btn-size: 1.4em; /* Reduce button size */
+  }
+
+  html {
+    font-size: 0.75em; /* 12px */
+  }
+  
+  #calculator {
+    grid-gap: 0.5rem; /* Reduce gap between buttons */
+    padding: 0

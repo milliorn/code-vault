@@ -1,0 +1,46 @@
+# sets Ubuntu as the base image
+FROM ubuntu:latest
+
+EXPOSE 80
+
+# change the version or filename by just changing the argument.
+ARG FILENAME="nginx-1.19.2"
+ARG EXTENSION="tar.gz"
+
+# add the the nginx file inside the image to the working directory as its destination.
+ADD https://nginx.org/download/${FILENAME}.${EXTENSION} .
+
+# installs standard packages necessary for building NGINX from source.
+# extracts the contents from the archive using tar and gets rid of it 
+# cd inside that directory and perform the build process. 
+RUN apt-get update && \
+	apt-get install build-essential \ 
+	libpcre3 \
+	libpcre3-dev \
+	zlib1g \
+	zlib1g-dev \
+	libssl1.1 \
+	libssl-dev \
+	-y && \
+	tar -xvf ${FILENAME}.${EXTENSION} && rm ${FILENAME}.${EXTENSION} && \
+	cd ${FILENAME} && \
+	./configure \
+	--sbin-path=/usr/bin/nginx \
+	--conf-path=/etc/nginx/nginx.conf \
+	--error-log-path=/var/log/nginx/error.log \
+	--http-log-path=/var/log/nginx/access.log \
+	--with-pcre \
+	--pid-path=/var/run/nginx.pid \
+	--with-http_ssl_module && \
+	make && make install && \
+	cd / && rm -rfv /${FILENAME} && \
+	apt-get remove build-essential \ 
+	libpcre3-dev \
+	zlib1g-dev \
+	libssl-dev \
+	-y && \
+	apt-get autoremove -y && \
+	apt-get clean && rm -rf /var/lib/apt/lists/*
+
+# start NGINX in single process mode
+CMD ["nginx", "-g", "daemon off;"]

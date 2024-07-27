@@ -1,0 +1,12 @@
+{
+  "name": "css-selectors",
+  "version": "1.0.0",
+  "description": "<https://www.freecodecamp.org/news/css-selectors-cheat-sheet-for-beginners/>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Survey Form</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<h1 id="title">
+		freeCodeCamp.org Survey Form
+	</h1>
+
+	<p id="description">Please fill out this short
+	</p>
+
+	<form id="survey-form">
+		<label for="name" id="name-label">Name</label><br>
+		<input id="name" type="text" placeholder="Enter your name" required /><br>
+		<label for="email" id="email-label">Email</label><br>
+		<input id="email" type="email" placeholder="user@example.com" required /><br>
+		<label for="number" id="number-label">Age</label><br>
+		<input id="number" type="number" min="1" max="99" placeholder="0" /><br>
+		<label for="dropdown">Gender</label><br>
+
+		<select id="dropdown" required>
+			<option value="none"></option>
+			<option value="male">Male</option>
+			<option value="female">Female</option>
+		</select><br>
+
+		<label for="question">Did you enjoy this site?</label><br>
+		<input type="radio" id="yes" name="name" value="Yes">
+		<label for="yes">Yes</label><br>
+		<input type="radio" id="no" name="name" value="No">
+		<label for="no">No</label><br>
+
+		<label for="color">Pick your favorite colors</label><br>
+		<input type="checkbox" id="red" value="Red">
+		<label for="red">Red</label><br>
+		<input type="checkbox" id="orange" value="Orange">
+		<label for="orange">Orange</label><br>
+		<input type="checkbox" id="yellow" value="Yellow">
+		<label for="yellow">Yellow</label><br>
+		<input type="checkbox" id="green" value="Green">
+		<label for="green">Green</label><br>
+		<input type="checkbox" id="blue" value="Blue">
+		<label for="blue">Blue</label><br>
+		<input type="checkbox" id="purple" value="Purple">
+		<label for="purple">Purple</label><br>
+		<input type="checkbox" id="brown" value="Brown">
+		<label for="brown">Brown</label><br>
+		<label for="comments" id="comments">Comments</label><br>
+		<textarea id="comments" name="comments" rows="4" cols="50">Leave a Comment</textarea><br>
+
+		<input type="submit" id="submit">
+	</form>
+</body>
+
+</html>
