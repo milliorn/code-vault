@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "http://milliorn.github.io/markdown-previewer",
   "dependencies": {
-    "marked": "^13.0.2",
+    "marked": "^13.0.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-helmet": "^6.1.0",
@@ -38,6 +38,6 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "gh-pages": "^6.1.0",
-    "tailwindcss": "^3.4.4"
+    "tailwindcss": "^3.4.7"
   }
 }
