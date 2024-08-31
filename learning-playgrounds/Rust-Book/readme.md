@@ -107,3 +107,7 @@
 ## 10.3. Validating References with Lifetimes
 
 <https://doc.rust-lang.org/book/ch10-03-lifetime-syntax.html>
+
+## 11.1. How to Write Tests
+
+<https://doc.rust-lang.org/book/ch11-01-writing-tests.html>
