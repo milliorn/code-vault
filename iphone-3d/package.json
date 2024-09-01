@@ -11,10 +11,10 @@
   },
   "dependencies": {
     "@studio-freight/lenis": "^1.0.42",
-    "@testing-library/jest-dom": "^6.4.8",
+    "@testing-library/jest-dom": "^6.5.0",
     "@testing-library/react": "^15.0.7",
     "@testing-library/user-event": "^14.5.2",
-    "@types/three": "^0.167.1",
+    "@types/three": "^0.168.0",
     "@types/webgi": "https://storage.googleapis.com/dist.pixotronics.com/webgi/runtime/bundle-types-0.5.5.tgz",
     "gsap": "^3.12.5",
     "postcss-flexbugs-fixes": "^5.0.2",
@@ -22,17 +22,17 @@
     "postcss-preset-env": "^9.6.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "web-vitals": "^4.2.2",
+    "web-vitals": "^4.2.3",
     "webgi": "https://storage.googleapis.com/dist.pixotronics.com/webgi/runtime/bundle-0.5.8.tgz"
   },
   "devDependencies": {
-    "@types/react": "^18.3.3",
+    "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
-    "@types/three": "^0.167.1",
+    "@types/three": "^0.168.0",
     "@types/webgi": "https://storage.googleapis.com/dist.pixotronics.com/webgi/runtime/bundle-types-0.5.5.tgz",
     "@vitejs/plugin-react": "^4.3.1",
     "cross-env": "^7.0.3",
-    "vite": "^5.3.5",
+    "vite": "^5.4.2",
     "webgi": "https://storage.googleapis.com/dist.pixotronics.com/webgi/runtime/bundle-0.5.5.tgz"
   }
 }
