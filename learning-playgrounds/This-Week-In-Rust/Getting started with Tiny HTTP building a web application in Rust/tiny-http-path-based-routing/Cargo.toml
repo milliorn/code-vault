@@ -1,0 +1,8 @@
+[package]
+name = "tiny-http-path-based-routing"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ascii = "1.1"
+tiny_http = "0.12"
