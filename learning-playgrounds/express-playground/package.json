@@ -21,7 +21,7 @@
   "homepage": "https://github.com/milliorn/express-playground#readme",
   "dependencies": {
     "cookie-parser": "^1.4.6",
-    "express": "^4.19.2",
+    "express": "^5.0.0",
     "express-validator": "^7.0.1",
     "isomorphic-fetch": "^3.0.0",
     "jsonwebtoken": "^9.0.0",
