@@ -18,7 +18,7 @@
     "@types/webgi": "https://storage.googleapis.com/dist.pixotronics.com/webgi/runtime/bundle-types-0.5.5.tgz",
     "gsap": "^3.12.5",
     "postcss-flexbugs-fixes": "^5.0.2",
-    "postcss-normalize": "^10.0.1",
+    "postcss-normalize": "^13.0.1",
     "postcss-preset-env": "^9.6.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
