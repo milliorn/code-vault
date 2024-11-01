@@ -24,7 +24,7 @@
     ]
   },
   "dependencies": {
-    "preact": "^10.24.1",
+    "preact": "^10.24.3",
     "preact-render-to-string": "^6.5.11",
     "preact-router": "^4.0.0",
     "react": "npm:@preact/compat",
@@ -33,19 +33,19 @@
   },
   "devDependencies": {
     "@types/enzyme": "^3.10.16",
-    "@types/jest": "^29.5.13",
+    "@types/jest": "^29.5.14",
     "@types/uuid": "^10.0.0",
-    "@typescript-eslint/eslint-plugin": "^8.8.0",
-    "@typescript-eslint/parser": "^8.8.0",
+    "@typescript-eslint/eslint-plugin": "^8.12.2",
+    "@typescript-eslint/parser": "^8.12.2",
     "enzyme": "^3.11.0",
     "enzyme-adapter-preact-pure": "^4.0.1",
-    "eslint": "^9.11.1",
+    "eslint": "^9.14.0",
     "eslint-config-preact": "^1.5.0",
     "jest": "^29.5.0",
     "jest-preset-preact": "^4.1.1",
     "preact-cli": "^3.5.1",
     "sirv-cli": "^2.0.2",
-    "typescript": "^5.6.2"
+    "typescript": "^5.6.3"
   },
   "jest": {
     "preset": "jest-preset-preact",
