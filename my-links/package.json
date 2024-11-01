@@ -29,7 +29,7 @@
     "preact-router": "^4.0.0",
     "react": "npm:@preact/compat",
     "react-dom": "npm:@preact/compat",
-    "uuid": "^10.0.0"
+    "uuid": "^11.0.2"
   },
   "devDependencies": {
     "@types/enzyme": "^3.10.16",
