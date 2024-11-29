@@ -1,9 +1,0 @@
-{
-    "title": "Landing Page",
-    "name": "startbootstrap-landing-page",
-    "version": "6.0.4",
-    "license": "MIT",
-    "dependencies": {
-        "bootstrap": "5.2.3"
-    }
-}

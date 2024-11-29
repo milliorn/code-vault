@@ -1,7 +1,0 @@
-/*
-  To use the universal selector, use the asterisk character, * You can use the universal selector to reset the browser's default padding and margin to zero at the top of the file before you add any other styles:
-*/
-* {
-  margin: 0;
-  padding: 0;
-}
