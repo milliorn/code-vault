@@ -59,3 +59,83 @@ pytest_cache/
 # IDEs
 .idea/
 *.iml
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
+.env
+.env.*.local
+
+# Logs
+logs/
+*.log
+*.log.*
+log/
+debug.log
+
+# Dependency directories
+jspm_packages/
+dist/
+build/
+.babel_cache/
+.cache/
+
+# Typescript
+*.tsbuildinfo
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Parcel Bundler
+.cache/
+
+# Next.js
+.next/
+out/
+
+# Nuxt.js
+.nuxt/
+dist/
+
+# Gatsby
+.cache/
+public/
+
+# Storybook
+storybook-static/
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Coverage directories
+coverage/
+*.lcov
+
+# ESLint
+.eslintcache
+
+# Prettier
+.prettier-cache/
+
+# Cypress
+cypress/screenshots/
+cypress/videos/
+
+# JetBrains IDEs
+.idea/
