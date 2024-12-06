@@ -28,37 +28,38 @@ VENV/
 # Jupyter Notebook
 .ipynb_checkpoints
 
-# VSCode
-.vscode/
-*.code-workspace
+# Rust/Cargo
+/target/
+/**/*.rs.bk
+*.crate
 
-# Visual Studio
-.vs/
-*.suo
-*.user
-*.userosscache
-*.sln.docstates
-
-# Logs
+# C++/CMake
+*.o
+*.obj
+*.so
+*.dll
+*.dylib
+*.exe
+*.out
+*.app
+*.a
+*.lib
+*.lock
+*.pdb
+*.idb
+*.pch
+*.mod
 *.log
-*.trace
-
-# Tests
-.tox/
-.nox/
-coverage/
-coverage.xml
-*.cover
-*.coverage
-.cache
-pytest_cache/
-
-# mypy
-.mypy_cache/
-
-# IDEs
-.idea/
-*.iml
+*.tlog
+*.plist
+CMakeFiles/
+CMakeCache.txt
+*.dir/
+Makefile
+makefile
+cmake_install.cmake
+_compile_commands.json
+_compile_flags.txt
 
 # Node.js
 node_modules/
@@ -85,7 +86,7 @@ build/
 .babel_cache/
 .cache/
 
-# Typescript
+# TypeScript
 *.tsbuildinfo
 
 # VSCode
@@ -98,6 +99,13 @@ build/
 *.user
 *.userosscache
 *.sln.docstates
+
+# .NET
+bin/
+obj/
+project.lock.json
+project.fragment.lock.json
+artifacts/
 
 # Parcel Bundler
 .cache/
