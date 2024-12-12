@@ -1,0 +1,149 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# C extensions
+*.so
+
+# Packages
+*.egg
+*.egg-info/
+dist/
+build/
+*.egg-info/
+
+# Virtual environments
+env/
+venv/
+ENV/
+VENV/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Rust/Cargo
+/target/
+/**/*.rs.bk
+*.crate
+
+# C++/CMake
+*.o
+*.obj
+*.so
+*.dll
+*.dylib
+*.exe
+*.out
+*.app
+*.a
+*.lib
+*.lock
+*.pdb
+*.idb
+*.pch
+*.mod
+*.log
+*.tlog
+*.plist
+CMakeFiles/
+CMakeCache.txt
+*.dir/
+Makefile
+makefile
+cmake_install.cmake
+_compile_commands.json
+_compile_flags.txt
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
+.env
+.env.*.local
+
+# Logs
+logs/
+*.log
+*.log.*
+log/
+debug.log
+
+# Dependency directories
+jspm_packages/
+dist/
+build/
+.babel_cache/
+.cache/
+
+# TypeScript
+*.tsbuildinfo
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# .NET
+bin/
+obj/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Parcel Bundler
+.cache/
+
+# Next.js
+.next/
+out/
+
+# Nuxt.js
+.nuxt/
+dist/
+
+# Gatsby
+.cache/
+public/
+
+# Storybook
+storybook-static/
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Coverage directories
+coverage/
+*.lcov
+
+# ESLint
+.eslintcache
+
+# Prettier
+.prettier-cache/
+
+# Cypress
+cypress/screenshots/
+cypress/videos/
+
+# JetBrains IDEs
+.idea/
