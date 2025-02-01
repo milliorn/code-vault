@@ -12,7 +12,7 @@
   "dependencies": {
     "@studio-freight/lenis": "^1.0.42",
     "@testing-library/jest-dom": "^6.6.3",
-    "@testing-library/react": "^15.0.7",
+    "@testing-library/react": "^16.2.0",
     "@testing-library/user-event": "^14.5.2",
     "@types/three": "^0.171.0",
     "@types/webgi": "https://storage.googleapis.com/dist.pixotronics.com/webgi/runtime/bundle-types-0.5.5.tgz",
