@@ -1,0 +1,90 @@
+/**
+ * Defines a custom font face for the "GaramondRegular" font family.
+ */
+@font-face {
+  font-family: "GaramondRegular";
+  src: url("assets/fonts/EBGaramond-Regular.ttf") format("truetype");
+  font-display: optional;
+}
+
+/**
+ * Defines a custom font face for the "IMFellDWPica" font family.
+ */
+@font-face {
+  font-family: "IMFellDWPica";
+  src: url("assets/fonts/IMFellDWPica-Regular.ttf") format("truetype");
+  font-display: optional;
+}
+
+/**
+ * - The `font-synthesis` property is set to `none` to disable font synthesis, which prevents the browser from creating faux bold or italic versions of the font.
+ * - The `text-rendering` property is set to `optimizeLegibility` to optimize text rendering for legibility, especially at small sizes.
+ * - The `-webkit-font-smoothing` property is set to `antialiased` to enable antialiased font smoothing in WebKit browsers.
+ * - The `-moz-osx-font-smoothing` property is set to `grayscale` to enable grayscale font smoothing in Firefox on macOS.
+ * - The `-webkit-text-size-adjust` property is set to `100%` to disable automatic text size adjustment in WebKit browsers.
+ */
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+/**
+ * It sets the margin of the body to 0, removing any default margin.
+ */
+body {
+  background-image: url("/background.avif");
+  margin: 0;
+}
+
+/**
+ * The opacity property is set to 0.8 to make the placeholder text slightly transparent.
+ */
+#text-input::placeholder {
+  opacity: 0.8;
+}
+
+#font-garamondRegularLord,
+#font-garamondRegularRings {
+  font-family: "GaramondRegular", serif;
+}
+
+#font-imFellDWPica {
+  font-family: "IMFellDWPica", serif;
+}
+
+#garamondRegular-whiteAI,
+#garamondRegular-whiteGithub {
+  color: white;
+  font-family: "GaramondRegular", serif;
+}
+
+#garamondRegular-title {
+  font-family: "GaramondRegular, serif";
+  font-size: 2rem;
+  margin-bottom: "-1rem";
+}
+
+#garamondRegular-title2 {
+  font-family: "GaramondRegular, serif";
+  font-size: 2rem;
+  margin-bottom: "-1rem";
+}
+
+#iIMFellDWPica-h2 {
+  font-family: "IMFellDWPica", serif;
+  font-size: 3rem;
+}
+
+#text-input {
+  color: white;
+  font-family: "GaramondRegular", serif;
+  font-size: 1.5rem; /* 24px */
+  line-height: 2rem; /* 32px */
+}
+
+#iIMFellDWPica-h3 {
+  font-family: "IMFellDWPica", serif;
+}
