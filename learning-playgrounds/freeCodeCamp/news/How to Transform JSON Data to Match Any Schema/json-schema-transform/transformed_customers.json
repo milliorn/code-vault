@@ -1,0 +1,10 @@
+{
+  "customers": [
+    {
+      "full_name": "Ada Lovelace",
+      "email_address": "ada@compute.org",
+      "mobile": "+1234567",
+      "tier": "platinum"
+    }
+  ]
+}

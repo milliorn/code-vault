@@ -1,0 +1,12 @@
+{
+  "customers": [
+    {
+      "customer_id": "abc123",
+      "name": "Ada Lovelace",
+      "email": "ada@compute.org",
+      "phone": "+1234567",
+      "address": "123 Programming Lane",
+      "membership_level": "platinum"
+    }
+  ]
+}
