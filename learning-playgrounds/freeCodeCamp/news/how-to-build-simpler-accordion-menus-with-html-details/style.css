@@ -1,0 +1,13 @@
+summary {
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0.5em 1em;
+}
+
+summary:marker {
+  content: "";
+}
+
+details {
+  margin-bottom: 1em;
+}
