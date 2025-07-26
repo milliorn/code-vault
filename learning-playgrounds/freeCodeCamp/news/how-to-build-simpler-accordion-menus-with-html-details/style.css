@@ -27,3 +27,13 @@ details[open] .closed-icon {
 details[open] .open-icon {
   display: inline;
 }
+
+details summary[role="button"] {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+details[open] summary[aria-expanded] {
+  aria-expanded: true;
+}
