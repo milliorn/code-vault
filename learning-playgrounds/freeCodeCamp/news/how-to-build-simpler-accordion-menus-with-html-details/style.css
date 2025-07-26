@@ -2,14 +2,32 @@ summary {
   cursor: pointer;
   font-weight: 600;
   padding: 0.5em 1em;
+  background-color: #f0f0f0;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  font-size: 1.1em;
+  color: #333333;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
 }
 
 summary:marker {
   content: "";
 }
 
+summary:hover {
+  background-color: #e0e0e0;
+}
+
 details {
   margin-bottom: 1em;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  padding: 0.5em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .closed-icon {
@@ -34,6 +52,11 @@ details summary[role="button"] {
   gap: 0.5em;
 }
 
-details[open] summary[aria-expanded] {
-  aria-expanded: true;
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 1em;
+  background-color: #f4f4f4;
+  color: #333333;
 }
