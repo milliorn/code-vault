@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{.Title}} | Go Blog with MongoDB</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+      <header class="mb-8">
+        <h1 class="text-3xl font-bold text-center text-blue-600">
+          Go Blog with MongoDB
+        </h1>
+        <div class="flex justify-center mt-4">
+          <a
+            href="/"
+            class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded"
+            >Back to Home</a
+          >
+        </div>
+      </header>
+
+      <div
+        class="max-w-3xl mx-auto bg-white rounded-lg shadow-md overflow-hidden"
+      >
+        <div class="p-6">
+          <h2 class="text-2xl font-bold mb-4 text-gray-800">{{.Title}}</h2>
+
+          <div class="flex items-center text-sm text-gray-500 mb-6">
+            <span>Posted: {{.CreatedAt.Format "Jan 02, 2006"}}</span>
+            {{if ne .CreatedAt .UpdatedAt}}
+            <span class="mx-2">•</span>
+            <span>Updated: {{.UpdatedAt.Format "Jan 02, 2006"}}</span>
+            {{end}}
+          </div>
+
+          <div class="prose max-w-none">
+            <p class="text-gray-700 whitespace-pre-line">{{.Content}}</p>
+          </div>
+        </div>
+
+        <div class="flex border-t border-gray-200">
+          <a
+            href="/edit/{{.ID.Hex}}"
+            class="w-1/2 py-3 text-center text-blue-600 hover:bg-gray-100 border-r border-gray-200"
+            >Edit Post</a
+          >
+          <a
+            href="/delete/{{.ID.Hex}}"
+            class="w-1/2 py-3 text-center text-red-600 hover:bg-gray-100"
+            onclick="return confirm('Are you sure you want to delete this post?')"
+            >Delete Post</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
